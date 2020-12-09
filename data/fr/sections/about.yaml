@@ -1,0 +1,90 @@
+# section information
+section:
+  name: "A propos"
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: "Doctorant"
+# your company information
+company:
+  name: IRyA.
+  url: "https://www.irya.unam.mx/web/en/"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/curriculum_vitae_francisco_tapia_en.pdf"
+
+# a summary about you
+summary: "Je fais actuellement mon doctorat à l'Institut de radioastronomie et d'astrophysique (IRyA) de l'Université nationale autonome du Mexique (UNAM en espagnol)."
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "f.tapia@irya.unam.mx"
+  
+  - name: Email
+    icon: "fas fa-at"
+    url: "ftapia@igeofisica.unam.mx"
+  
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://www.github.com/example"
+  
+  - name: Docker
+    icon: "fab fa-docker"
+    url: "https://hub.docker.com/u/ftapia"
+  
+  - name: LinkedIn
+    icon: "fab fa-researchgate"
+    url: "https://www.researchgate.net/profile/Francisco_Tapia8"  
+  
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/francisco-tapia-vazquez/"
+  
+  - name: Twitter
+    icon: "fab fa-twitter"
+    url: "https://twitter.com/ftapia_va"
+  
+  - name: Facebook
+    icon: "fab fa-facebook"
+    url: "https://www.facebook.com/Franciscotapiav"
+  
+  - name: Instagram
+    icon: "fab fa-instagram"
+    url: "https://www.instagram.com/fratava/"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+#softSkills:
+#- name: Chef de projet
+#  percentage: 85
+#  color: blue
+#- name: Travail d'équipe
+#  percentage: 90
+#  color: yellow
+#- name: Communication
+#  percentage: 85
+#  color: pink
+#- name: Persévérant
+#  percentage: 85
+#  color: green
+#- name: Autonome
+#  percentage: 85
+#  color: sky
+#- name: Logique
+#  percentage: 85
+#  color: orange
+# you can also provide color code instead of pre-defined color name
+# - name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
+# - name: Example 2
+#   percentage: 65
+#   color: "#8b8383"

@@ -1,0 +1,55 @@
+# section information
+section:
+  name: Competences
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  template: sections/skills.html
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+  - name: Kubernetes
+    icon: "images/skills/kubernetes.png"
+    summary: "Capable de déployer et de gérer des applications sur Kubernetes. Expérience du développement de clusters Kubernetes pour gitlab."
+    url: "https://kubernetes.io/"
+  
+  - name: Docker
+    icon: "images/skills/docker.svg"
+    summary: "Expérience de développement d'applications conteneurisées avec un processus de construction multi-étapes et multi-architecture."
+    url: "https://www.docker.com/"
+
+  - name: Cloud Computing
+    icon: "images/skills/cloud.png"
+    summary: "Je travaille avec la plupart des principaux clouds tels que GCP, AWS, etc. Certification AWS en cours. Capable de monter des services dans le cloud."
+  
+  - name: MPI
+    icon: "images/skills/open-mpi.png"
+    summary: "Utilisateur de l'interface de transmission de messages (MPI) à des fins scientifiques. J'ai développé des codes parallèles complexes."
+    url: "https://www.open-mpi.org/"
+
+  - name: Julia
+    icon: "images/skills/julia.png"
+    summary: "Utilisateur de Julia Language. Je l'utilise pour le calcul scientifique, le calcul haute performance et le calcul distribué."
+    url: "https://julialang.org/"
+  
+  - name: Linux
+    icon: "images/skills/linux.png"
+    summary: "Certification Sysadmin en cours. Capable d'écrire des scripts bash et niveau intermédiaire d'automatisation."
+  
+  - name: Git
+    icon: "images/skills/git.png"
+    summary: "Expérience avec les versions git et d'hébergement de GitLab. Visitez gitlab.ftapia.dev et obtenez un compte gratuit."
+    url: "https://gitlab.ftapia.dev/"
+  
+  - name: Python
+    icon: "images/skills/python.jpg"
+    summary: "Programmation python avancée. Je l'utilise pour le développement de code scientifique et comme framework web."
+
+  - name: Latex
+    icon: "images/skills/overleaf_logo.png"
+    summary: "Expérience du service latex dans le cloud en tant qu'auto-hébergé. Visitez latex.ftapia.dev et obtenez un compte gratuit."
+    url: "https://latex.ftapia.dev/"

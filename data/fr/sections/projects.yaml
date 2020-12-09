@@ -1,0 +1,207 @@
+# section information
+section:
+  name: Projets
+  id: projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  template: sections/projects.html
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+  - name: Tout
+    filter: "Tout"
+  - name: Publications
+    filter: "Publications"
+  - name: Académique
+    filter: "Académique"
+  - name: Divulgation
+    filter: "Divulgation"
+  - name: Enseignement
+    filter: "Enseignement"
+  - name: Rester
+    filter: "Rester"
+  
+
+# your projects
+projects:
+  #- name: Kubernetes
+  #  logo: images/projects/kubernetes.png
+  #  role: Contributor
+  #  timeline: "March 2018 - Present"
+  #  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  #  summary: Production-Grade Container Scheduling and Management.
+  #  tags: ["publications", "kubernetes", "cloud"]
+  
+  #- name: Tensorflow
+  #  logo: images/projects/tensorflow.png
+  #  role: Developer
+  #  timeline: "Jun 2018 - Present"
+  #  repo: https://github.com/tensorflow/tensorflow
+  #  #url: ""
+  #  summary: An Open Source Machine Learning Framework for Everyone.
+  #  tags: ["publications", "machine-learning","Académique"]
+  
+  #- name: Nocode
+  #  logo: images/projects/no-code.png
+  #  role: Nothing
+  #  timeline: "Oct 2019 - Dec 2019"
+  #  url: "https://www.example.com"
+  #  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
+  #  tags: ["hobby", "fun"]
+  
+  - name: ALMA's view of the nearest neighbors to the Sun. The submm/mm SEDs of the alpha Centauri binary and a new source.
+    role: Astronomy & Astrophysics 
+    timeline: "8 de Agosto 2016"
+    ads: "https://ui.adsabs.harvard.edu/abs/2016A%26A...594A.109L/abstract"
+    summary: René Liseau, V. De la Luz, E. O'Gorman, E. Bertone, M. Chavez and F. Tapia.
+    tags: ["Publications", "Tout"]
+  
+  - name: "The MESAS Project: Long-wavelength Follow-up Observations of Sirius A."
+    role: The Astrophysical Journal 
+    timeline: "16 de Abril 2019"
+    ads: "https://ui.adsabs.harvard.edu/abs/2019ApJ...875...55W/abstract"
+    summary: Jacob Aaron White, J. Aufdenberg, A. C. Boley, M. Devlin, S. Dicker, P. Hauschildt, A. G. Hughes, A. M. Hughes, B. Mason, B. Matthews, A. Moór, T. Mroczkowski, C. Romero, J. Sievers, S. Stanchfield, F. Tapia, and D. Wilner
+    tags: ["Publications", "Tout"]
+  
+  - name: Nonlinear Convergence of Solar-like Stars Chromospheres Using Millimeter, Submillimeter, and Infrared Observations.
+    role: The Astrophysical Journal Supplement Series
+    timeline: "6 de Enero 2020"
+    ads: "https://ui.adsabs.harvard.edu/abs/2020ApJS..246....5T/abstract"
+    summary: F. Tapia-Vázquez and V. De la Luz
+    tags: ["Publications", "Tout"]
+  
+  - name: "The MESAS Project: ALMA observations of the F-type stars γ Lep, γ Vir A, and γ Vir B."
+    role: The Astrophysical Journal 
+    timeline: "27 de Marzo 2020"
+    ads: "https://ui.adsabs.harvard.edu/abs/2020ApJ...894...76W/abstract"
+    summary: Jacob Aaron White, F. Tapia-Vázquez, A. G. Hughes, A. Moór, B. Matthews, D. Wilner, J. Aufdenberg, A. M. Hughes, V. De la Luz, and A. Boley
+    tags: ["Publications", "Tout"]
+  
+  - name: GICC UNAM
+    logo: images/projects/gicc.png
+    role: Membre
+    #timeline: "Enero 2020 - Present"
+    url: "http://www.gicc.unam.mx/"
+    summary: "Le Groupe Interdisciplinaire d'Informatique Scientifique est un groupe d'étudiants, de professeurs et de chercheurs qui collaborent afin de créer une collaboration interdisciplinaire sur les questions informatiques."
+    tags: ["Académique", "Tout"]
+  
+  - name: Kinich Pakal
+    logo: images/projects/pakal-negro.png
+    role: Developer
+    #repo: "https://www.example.com"
+    #timeline: "Jun 2019 - Present"
+    url: "https://docs-kinich.ftapia.dev/"
+    summary: "Kinich Pakal est un code dérivé de [Pakal-MPI](https://ui.adsabs.harvard.edu/abs/2010ApJS..188..437D/abstract) qui vise à modéliser l'atmosphère des étoiles de type solaire."
+    tags: ["Académique", "Tout"]
+  
+  - name: Astronomy on Tap Budapest
+    logo: images/projects/aot.png
+    role: Orateur
+    timeline: "Enero 2020"
+    url: "https://twitter.com/AoTBudapest/status/1217154631933079554"
+    summary: ""
+    tags: ["Divulgation", "Tout"]
+  
+  - name: Astronomy on Tap Groningen
+    logo: images/projects/aot.png
+    role: Orateur
+    timeline: "Octubre 2020"
+    url: "https://www.youtube.com/watch?v=6Io05xoWiO8"
+    summary: ""
+    tags: ["Divulgation", "Tout"]
+  
+  - name: Actualités Astronomiques-IRyA
+    logo: images/projects/irya-negro.png
+    role: Orateur
+    timeline: "Enero 2020"
+    url: "https://www.facebook.com/462269614112668/videos/581161079421005"
+    summary: ""
+    tags: ["Divulgation", "Tout"]
+  
+  - name: Actualités Astronomiques-IRyA
+    logo: images/projects/irya-negro.png
+    role: Orateur
+    timeline: "Agosto 2020"
+    url: "https://www.facebook.com/462269614112668/videos/218112246194874"
+    summary: ""
+    tags: ["Divulgation", "Tout"]
+  
+  - name: Scoostep NEWSLETTER
+    logo: images/projects/scoostep.png
+    role: Écrivain
+    timeline: "Agosto 2020"
+    url: "https://www.bc.edu/content/dam/bc1/offices/ISR/SCOSTEP/Multimedia/newsletterarchive/SCOSTEP_PRESTO_Newsletter_Vol23_high_reso.pdf"
+    summary: ""
+    tags: ["Divulgation", "Tout"]
+  
+  - name: Nuit des étoiles-IRyA
+    logo: images/projects/irya-negro.png
+    role: Orateur
+    timeline: "Novembre 2020"
+    url: "https://www.facebook.com/iryaunam/videos/857480485059304"
+    summary: ""
+    tags: ["Divulgation", "Tout"]
+
+  - name: Nuit des étoiles-IRyA
+    logo: images/projects/irya-negro.png
+    role: Orateur
+    timeline: "Novembre 2020"
+    url: "https://www.facebook.com/iryaunam/videos/806964073487060"
+    summary: ""
+    tags: ["Divulgation", "Tout"]
+
+  - name: Dynamical Systems
+    logo: images/projects/unam.png
+    role: Maître assistant/ENES-Morelia 
+    timeline: "2017"
+    url: "https://www.enesmorelia.unam.mx/"
+    summary: ""
+    tags: ["Enseignement", "Tout"]
+  
+  - name: Mathematical Methods for Geoscientists
+    logo: images/projects/unam.png
+    role: Maître assistant/ENES-Morelia 
+    timeline: "2018"
+    url: "https://www.enesmorelia.unam.mx/"
+    summary: ""
+    tags: ["Enseignement", "Tout"]
+
+  - name: Geostatistics
+    logo: images/projects/unam.png
+    role: Professeur agrégé/ENES-Morelia
+    timeline: "2020"
+    url: "https://www.enesmorelia.unam.mx/"
+    summary: ""
+    tags: ["Enseignement", "Tout"]
+
+  - name: Herramientas de computo de alto rendimiento en el Servicio de Clima Espacial México
+    role: Expositeur
+    timeline: "2016"
+    url: "https://www.ugm.org.mx/raugm2016/#cursos_menu"
+    summary: "Enseigné à la Reunión Anual de la Unión Geofísica Mexicana, Puerto Vallarta, Jalisco."
+    tags: ["Enseignement", "Tout"]
+  
+  - name: Taller de Supercómputo de Clima Espacial
+    role: Expositeur
+    timeline: "2017"
+    url: "http://tasp.fcfm.uanl.mx/index.php/es/registro-es/taller-de-clima-espacial"
+    summary: "Enseigné à la 3er. Taller de Astrofísica Planetaria y X Congreso Nacional de Astrobiología, UANL-Monterrey."
+    tags: ["Enseignement", "Tout"]
+
+  - name: Onsala Space Observatory, Chalmers University of Technology
+    role: Gothenburg, Sweden
+    timeline: "2018"
+    url: "https://www.oso.chalmers.se/"
+    summary: "Sous la direction du Dr. Wouter Vlemmings."
+    tags: ["Rester", "Tout"]
+
+  - name: Centro de Rádio Astronomía e Astrofísica Mackenzie, Universidade Presbiteriana Mackenzie
+    role: São Paulo, Brazil
+    timeline: "2019"
+    url: "https://www.mackenzie.br/centro-de-radio-astronomia-e-astrofisica-mackenzie/"
+    summary: "Sous la direction du Dr. Jean Pierre Raullin."
+    tags: ["Rester", "Tout"]

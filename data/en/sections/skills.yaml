@@ -1,0 +1,55 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+  - name: Kubernetes
+    icon: "images/skills/kubernetes.png"
+    summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes clusters for gitlab."
+    url: "https://kubernetes.io/"
+  
+  - name: Docker
+    icon: "images/skills/docker.svg"
+    summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process. "
+    url: "https://www.docker.com/"
+
+  - name: Cloud Computing
+    icon: "images/skills/cloud.png"
+    summary: "Worked with most of the major clouds such as GCP, AWS, etc. AWS certification in process."
+  
+  - name: MPI
+    icon: "images/skills/open-mpi.png"
+    summary: "Message Passing Interface (MPI) user for scientific objectives. Capable of writing complex parallels codes."
+    url: "https://www.open-mpi.org/"
+
+  - name: Julia
+    icon: "images/skills/julia.png"
+    summary: "Julia Language user. Use for scientific programming and high-performance computing."
+    url: "https://julialang.org/"
+  
+  - name: Linux
+    icon: "images/skills/linux.png"
+    summary: "Using as the main operating system. Capable of writing bash scripts, develop cloud-based apps, and scientific tools."
+  
+  - name: Git
+    icon: "images/skills/git.png"
+    summary: "Experienced with git-based development. Also, have experience in GitLab self hosted. gitlab.ftapia.dev "
+    url: "https://gitlab.ftapia.dev/"
+  
+  - name: Python
+    icon: "images/skills/python.jpg"
+    summary: "Advance python programming. Used for scientific programming and web framework."
+
+  - name: Latex
+    icon: "images/skills/overleaf_logo.png"
+    summary: "Experience in cloud-based latex service as self-hosted. Contact me for a free account. latex.ftapia.dev"
+    url: "https://latex.ftapia.dev/"
+  

@@ -1,0 +1,54 @@
+# section information
+section:
+  name: Experiencia
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Facultad de Ciencias Físico Matemáticas
+    url: "http://www.fismat.umich.mx"
+    location: Morelia, Michoacán
+    # company overview
+    overview: Universidad Michoacana de San Nicolás de Hidalgo.
+  positions:
+  - designation: Licenciatura en Ciencias Físico Matemáticas
+    start: 2012
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: 2017
+    responsibilities:
+    - Propagación de rayos cósmicos. [github](https://github.com/fratava/Cosmicrays)
+    - Atmósferas Estelares.
+    - Transferencia Radiativa.
+
+- company:
+    name: Escuela Nacional de Estudios Superiores, Unidad Morelia
+    url: "http://www.pctierra.unam.mx/"
+    location: Morelia, Michoacán
+    overview: Universidad Nacional Autónoma de México.
+  positions:
+  - designation: Maestría en Ciencias de la Tierra
+    start: 2017
+    end: 2019
+    responsibilities:
+    - Radioastronomía solar.
+    - Atmósferas Estelares.
+    - Transferencia Radiativa.
+
+- company:
+    name: Instituto de Radioastronomía y Astrofísica
+    url: "https://www.irya.unam.mx/web/en/"
+    location:  Morelia, Michoacán
+    overview: Universidad Nacional Autónoma de México.
+  positions:
+  - designation: Doctorado en Astronomía
+    start: 2019
+    responsibilities:
+    - Radioastronomía.
+    - Atmósferas estelares.
+    - Estrellas de tipo solar.

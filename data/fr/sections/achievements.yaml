@@ -1,0 +1,31 @@
+# section information
+section:
+  name: Images
+  id: achievements
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  template: sections/achievements.html
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your achievements achievements
+achievements:
+  - title: Onsala, Suède
+    image: images/achievements/onsala-t.jpg
+    summary: 
+  - title: Budapest, Hongrie
+    image: images/achievements/budapest.jpg
+    summary: 
+  - title: Sao Paulo, Brésil
+    image: images/achievements/craam.jpg
+    summary: 
+  - title: Gran Telescopio Milimétrico, Puebla, Mexique
+    image: images/achievements/lmt.jpg
+    summary: 
+  - title: Kinich Pakal
+    image: images/achievements/kp_acena.jpg
+    summary: 
+  - title: MESAS
+    image: images/achievements/mesas.jpg
+    summary: 

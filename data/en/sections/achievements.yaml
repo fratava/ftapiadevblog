@@ -1,0 +1,30 @@
+# section information
+section:
+  name: Gallery
+  id: achievements
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your achievements achievements
+achievements:
+  - title: Onsala, Suecia
+    image: images/achievements/onsala-t.jpg
+    summary: Onsala Space Observatory (OSO), the Swedish National Infrastructure for Radio Astronomy, provides scientists with equipment to study the Earth and the rest of the Universe. In Onsala, 45 km south of Göteborg, we operate several radio telescopes for astronomy and geodesy. We take part in international radio astronomical projects, e.g., EVN, ALMA and SKA. The observatory is a geodetic fundamental station. The equipment for Earth sciences includes navigation satellite receivers, a superconducting gravimeter, tide gauges, and radiometers.
+  - title: Budapest
+    image: images/achievements/budapest.jpg
+    summary: Located in Budapest (Hungary) was founded in 1899, when Miklós Konkoly Thege donated his private observatory (f. 1871) to the state. Together with the Heliophysical Observatory in Debrecen, it forms the Astrophysical Institute of the Hungarian Academy of Sciences. Research includes observations with our 0.5-1 m class optical telescopes in the Piszkéstető Mountain Station, theoretical works and involvement in space projects.
+  - title: Sao Paulo
+    image: images/achievements/craam.jpg
+    summary: The CRAAM originated in 1960 as the Mackenzie Radio Astronomy Group - GRAM of the then Faculty of Philosophy, Sciences and Letters of Mackenzie University, incorporating the experimental activities of a group of students of physics and engineering, technicians, and amateurs of the Association of Amateurs of Astronomy, São Paulo, started since 1958. CRAAM activities in research and post-graduation were pioneers in Brazil, in the areas of radio science, including radio-astronomy, solar physics, solar-terrestrial relations, ionosphere physics, astrophysics, radio instrumentation science and space sciences.
+  - title: Gran Telescopio Milimétrico
+    image: images/achievements/lmt.jpg
+    summary: The Large Millimeter Telescope Alfonso Serrano (or Gran Telescopio Milimétrico Alfonso Serrano) is the world´s largest single-dish steerable millimetre-wavelength telescope designed specifically for astronomical observations in the wavelength range of 0.85 – 4mm. This binational project between México and the United States of America represents the largest and most complex scientific instrument constructed in México. Situated on the summit of Volcán Sierra Negra at an altitude of 4600 meters, the LMT has begun its exploration of the physical processes that lead to the formation and evolution of planetary systems, stars, black-holes and galaxies thoughout the 13.7 billion year history of the Universe.
+  - title: Kinich Pakal
+    image: images/achievements/kp_acena.jpg
+    summary: KINICH-PAKAL is a new methodology to fit the observed and synthetic spectrum of solar-like stars at millimeter, submillimeter, and infrared wavelengths through semiempirical models of the solar chromosphere.
+  - title: MESAS
+    image: images/achievements/mesas.jpg
+    summary: The new generation of radio telescopes such as ALMA allows characterize stellar emission at submillimeter and millimeter wavelengths. This work is the first effort to understand how the emission affects the debris studies.

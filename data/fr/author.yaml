@@ -1,0 +1,22 @@
+name: "Francisco Tapia Vazquez"
+nickname: "Francisco"
+image: "images/profilepic.png"
+
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Bonjour, je m'appelle"
+
+# give your some contact information. they will be used in the footer
+contactInfo:
+  Address: "Antigua Carretera a Pátzcuaro #8701
+  Colonia Ex-Hda. San José de la Huerta
+  Morelia, Michoacán. México. C.P.580891"
+  Telephone: "+52 (443) 322 38 45 ext. 32845"
+  Email2: "ftapia@igeofisica.unam.mx"
+  Email1: "f.tapia@irya.unam.mx"
+
+# some summary about what you do
+summary:
+  - Je suis étudiant en astrophysique
+  - Je suis développeur
+  - J'aime les ordinateurs
+  - J'aime travailler avec des projets amusants

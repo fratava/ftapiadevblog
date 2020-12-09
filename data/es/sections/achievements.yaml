@@ -1,0 +1,30 @@
+# section information
+section:
+  name: Galeria
+  id: achievements
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your achievements achievements
+achievements:
+- title: Onsala, Suecia
+  image: images/achievements/onsala-t.jpg
+  summary: El Observatorio Espacial Onsala (OSO), la infraestructura nacional sueca para radioastronomía, proporciona a los científicos equipos para estudiar la Tierra y el resto del Universo. En Onsala, a 45 km al sur de Gotemburgo, operamos varios radiotelescopios para astronomía y geodesia. Participamos en proyectos radioastronómicos internacionales, por ejemplo, EVN, ALMA y SKA. El observatorio es una estación fundamental geodésica. El equipo para las ciencias de la Tierra incluye receptores de navegación por satélite, un gravímetro superconductor, mareógrafos y radiómetros.
+- title: Budapest
+  image: images/achievements/budapest.jpg
+  summary: Ubicado en Budapest (Hungría) fue fundado en 1899, cuando Miklós Konkoly Thege donó su observatorio privado (f. 1871) al estado. Junto con el Observatorio Heliofísico de Debrecen, forma el Instituto Astrofísico de la Academia de Ciencias de Hungría. La investigación incluye observaciones con nuestros telescopios ópticos de clase 0,5-1 m en la estación de montaña Piszkéstető, trabajos teóricos y participación en proyectos espaciales.
+- title: Sao Paulo
+  image: images/achievements/craam.jpg
+  summary: El CRAAM se originó en 1960 como el Grupo de Radioastronomía Mackenzie - GRAM de la entonces Facultad de Filosofía, Ciencias y Letras de la Universidad de Mackenzie, incorporando las actividades experimentales de un grupo de estudiantes de física e ingeniería, técnicos y aficionados de la Asociación de Aficionados. de Astronomía, São Paulo, se inició en 1958. Las actividades del CRAAM en investigación y posgrado fueron pioneras en Brasil, en las áreas de radiociencia, incluyendo radioastronomía, física solar, relaciones solar-terrestres, física de ionosfera, astrofísica, radioinstrumentación ciencia y ciencias espaciales.
+- title: Gran Telescopio Milimétrico
+  image: images/achievements/lmt.jpg
+  summary: El Gran Telescopio Milimétrico Alfonso Serrano (o Gran Telescopio Milimétrico Alfonso Serrano) es el telescopio orientable de longitud de onda milimétrica de plato único más grande del mundo diseñado específicamente para observaciones astronómicas en el rango de longitud de onda de 0,85 a 4 mm. Este proyecto binacional entre México y los Estados Unidos de América representa el instrumento científico más grande y complejo construido en México. Situado en la cima del Volcán Sierra Negra a una altitud de 4600 metros, el LMT ha comenzado su exploración de los procesos físicos que conducen a la formación y evolución de sistemas planetarios, estrellas, agujeros negros y galaxias a lo largo de los 13,7 mil millones de años de historia de el universo.
+- title: Kinich Pakal
+  image: images/achievements/kp_acena.jpg
+  summary: KINICH-PAKAL es una nueva metodología para ajustar el espectro observado y sintético de estrellas de tipo solar en longitudes de onda milimétricas, submilimétricas e infrarrojas a través de modelos semiempíricos de la cromosfera solar.
+- title: MESAS
+  image: images/achievements/mesas.jpg
+  summary: La nueva generación de radiotelescopios como ALMA permite caracterizar la emisión estelar en longitudes de onda submilimétricas y milimétricas. Este trabajo es el primer esfuerzo por comprender cómo afecta la emisión a los estudios de escombros.
