@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://ftapia.dev/</loc>
-    <lastmod>2020-06-08T08:06:25+06:00</lastmod>
+    <lastmod>2020-12-11T08:06:25+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -23,48 +23,8 @@
   </url>
   
   <url>
-    <loc>https://ftapia.dev/posts/introduction/</loc>
-    <lastmod>2020-06-08T08:06:25+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://ftapia.dev/es/posts/introduction/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://ftapia.dev/fr/posts/introduction/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ftapia.dev/posts/introduction/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://ftapia.dev/posts/supercomputo/</loc>
-    <lastmod>2020-06-08T08:06:25+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://ftapia.dev/es/posts/supercomputo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://ftapia.dev/fr/posts/supercomputo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ftapia.dev/posts/supercomputo/"
-                />
-  </url>
-  
-  <url>
     <loc>https://ftapia.dev/posts/</loc>
-    <lastmod>2020-06-08T08:06:25+06:00</lastmod>
+    <lastmod>2020-12-11T08:06:25+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -79,6 +39,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ftapia.dev/posts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ftapia.dev/posts/atmospheres/</loc>
+    <lastmod>2020-12-11T08:06:25+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://ftapia.dev/es/posts/atmospheres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://ftapia.dev/fr/posts/atmospheres/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ftapia.dev/posts/atmospheres/"
                 />
   </url>
   

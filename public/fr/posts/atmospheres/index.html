@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Categories</title>
+    <title>Atmosphères stellaires dans le solaire comme des étoiles à des longueurs d&#39;onde millimétriques et submillimétriques</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -23,8 +23,13 @@
 <link rel="stylesheet" href="/assets/css/style.css"/>
 
     
-    <link rel="stylesheet" href="/assets/css/layouts/list.css">
-    <link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+<meta name="description" content="Markdown rendering samples" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
 
 
     
@@ -83,12 +88,12 @@ if (!doNotTrack) {
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
       
-        <a class="dropdown-item nav-link languages-item" href="/categories">
+        <a class="dropdown-item nav-link languages-item" href="/posts/atmospheres">
           <img class="flag" src="https://www.countryflags.io/gb/flat/24.png">
           English
         </a>
       
-        <a class="dropdown-item nav-link languages-item" href="/es/categories">
+        <a class="dropdown-item nav-link languages-item" href="/es/posts/atmospheres">
           <img class="flag" src="https://www.countryflags.io/es/flat/24.png">
           Español
         </a>
@@ -108,11 +113,6 @@ if (!doNotTrack) {
 
       
       
-  
-  
-    
-  
-
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
@@ -126,9 +126,12 @@ if (!doNotTrack) {
   
   
   
+    
+    
+  
   
     
-    <li><a class="" href="/fr/posts/atmospheres/">Solar-like Stars</a></li>
+    <li><a class="active" href="/fr/posts/atmospheres/">Solar-like Stars</a></li>
   
 
 
@@ -143,22 +146,149 @@ if (!doNotTrack) {
       
       
 <section class="content-section" id="content-section">
-  <div class="content container-fluid" id="content">
-    <div class="container-fluid post-card-holder" id="post-card-holder">
+  <div class="content">
+    <div class="container p-0 read-area">
       
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://ftapia.dev/posts/atmospheres/images/alma.jpg);'>
+      </div>
+
       
-    </div>
-    <div class="paginator">
-      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/profilepic.png'/>
+          <h5 class="author-name">Francisco Tapia Vazquez</h5>
+          <p>December 11, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>Atmosphères stellaires dans le solaire comme des étoiles à des longueurs d&#39;onde millimétriques et submillimétriques</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <img src="/posts/atmospheres/images/acena.png"
+    
+    
+        width="399"
+    
+    
+        height="316"
+    
+    
+        style="float: right;"
+    
+    
+>
+
+<p>L&rsquo;atmosphère des étoiles de type solaire est composée de la photosphère, de la chromosphère, de la zone de transition et de la couronne. La chromosphère est la couche où la température passe de 4000 K à 8000 K et est étudiée aux longueurs d&rsquo;onde ultraviolette, visible, infrarouge, millimétrique et (sub) -millimétrique (Wedemeyer et al. 2016) <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.
+Les premiers modèles chromosphériques ont été obtenus grâce aux observations ultraviolettes (Vernazza et al. 1981; Avrett &amp; Loeser 2008) <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. Cependant, des observations récentes faites avec le télescope solaire submillimétrique (SST) et le grand réseau millimétrique / submillimétrique Atacama (ALMA) ont montré que la chromosphère a des températures plus basses que celles attendues par les modèles ultraviolets (Linsky 2017). <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>Nous avons développé le code KINICH-PAKAL (Tapia-Vázquez, &amp; De la Luz 2020) <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> qui utilise l&rsquo;algorithme de Levenberg-Marquard comme méthode d&rsquo;ajustement non linéaire, PAKAL-MPI comme modèle chromosphérique de l&rsquo;atmosphère solaire et observations à des longueurs d&rsquo;onde allant de l&rsquo;infrarouge au millimètre pour générer un modèle plus précis des chromosphères des étoiles de type solaire.
+KINICH-PAKAL nous a permis d&rsquo;étudier en détail comment les conditions physiques de l&rsquo;atmosphère évoluent en fonction de sa température effective.
+Le développement de ces modèles est nécessaire pour les études sur les disques de débris (White et al. 2018) <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>, étudier les conditions dans lesquelles les éruptions se forment (MacGregor et al., 2018) <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> et les mécanismes physiques possibles des variations de flux dans le étoiles (Liseau 2019) <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.</p>
+<h3 id="références">Références</h3>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Wedemeyer, S., Bastian, T., Brajša, R., et al. 2016, SSRv, 200, 1. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Vernazza, J. E., Avrett, E. H., &amp; Loeser, R. 1981, ApJS,45, 635. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Avrett, E. H., &amp; Loeser, R. 2008, ApJS, 175, 229. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Linsky, J. L. 2017, ARA&amp;A, 55, 159. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Tapia-Vázquez, F., &amp; De la Luz, V. 2020, ApJS, 246, 5. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>White, J.A., Aufdenberg, J., Boley, A.C., 2018, ApJ,859(2), p.102. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>MacGregor, M. A., Weinberger, A. J., Wilner, D. J., Kowalski, A. F., &amp; Cranmer, S. R. 2018, ApJ, 855, L2. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Liseau, R. 2019, arXiv:1904.03043. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+        </div>
+
+        
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
 
 
+  
+    
+    
+  
+
+</div>
+
+      <hr />
+      
+      
+      </div>
     </div>
   </div>
+  
+    
+
+    
+
+
+<div class="dropdown languageSelector">
+    <a class="btn dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img class="flag" src="https://www.countryflags.io/fr/flat/16.png">
+        Français
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+        
+        <a class="dropdown-item nav-link languages-item" href="/posts/atmospheres">
+            <img class="flag" src="https://www.countryflags.io/gb/flat/24.png">
+            English
+        </a>
+        
+        <a class="dropdown-item nav-link languages-item" href="/es/posts/atmospheres">
+            <img class="flag" src="https://www.countryflags.io/es/flat/24.png">
+            Español
+        </a>
+        
+    </div>
+</div>
+  
 </section>
 
 
       
-       
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3"></h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#références">Références</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
     </div>
 
     
@@ -332,7 +462,19 @@ if (!doNotTrack) {
 
     
     
-    <script src="/assets/js/list.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);">
+</script>
+
+
 
   </body>
 </html>
