@@ -23,12 +23,18 @@ markup:
     startLevel: 2
     endLevel: 6
     ordered: false
+  goldmark:
+    renderer:
+    unsafe: true
 
 # Enable global emoji support
 enableEmoji: true
 
 # Enable Google Analytics
 googleAnalytics: UA-163502824-2
+
+# Enable Disqus forum
+disqusShortname: ftapia-dev
 
 # Site parameters
 params:
