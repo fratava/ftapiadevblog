@@ -6,6 +6,6 @@ description: Personal page of Francisco Tapia Vazquez.
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
-customMenus:
-- name: Apps
-  url: https://apps.ftapia.dev/
+#customMenus:
+#- name: Apps
+#  url: https://apps.ftapia.dev/
