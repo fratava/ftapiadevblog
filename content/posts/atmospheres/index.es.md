@@ -6,8 +6,8 @@ hero: /posts/atmospheres/images/alma.jpg
 description: Atmosferas estelares
 menu:
   sidebar:
-    name: Solar-like Stars
-    identifier: markdown
+    name: Atmósferas estelares
+    identifier: estelares
     weight: 30s
 math: true
 ---

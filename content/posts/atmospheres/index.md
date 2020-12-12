@@ -6,8 +6,8 @@ hero: /posts/atmospheres/images/alma.jpg
 description: Stellar atmospheres
 menu:
   sidebar:
-    name: Solar-like Stars
-    identifier: markdown
+    name: Stellar atmospheres
+    identifier: stellar
     weight: 30s
 math: true
 ---
