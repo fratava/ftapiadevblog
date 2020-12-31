@@ -1,6 +1,6 @@
 ---
 title: "Atmosphères stellaires dans le solaire comme des étoiles à des longueurs d'onde millimétriques et submillimétriques"
-date: 2020-12-11T08:06:25+06:00
+date: 2020-12-31T10:16:25+06:00
 hero: /posts/atmospheres/images/alma.jpg
 description: Markdown rendering samples
 menu:

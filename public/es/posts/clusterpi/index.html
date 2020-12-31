@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clúster Rasp</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/pakal-blanco.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+    <link rel="stylesheet" href="/assets/css/layouts/list.css">
+    <link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-163502824-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/es">
+      <img src="/images/pakal-negro.png"></a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/pakal-negro.png" class="d-none" id="main-logo">
+  <img src="/images/pakal-blanco.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  
+  
+    
+  
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/">Docker</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/introduccion/">¿Qué es Docker?</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/instalacion/">Instalación</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/linux/">Linux</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/macos/">MacOS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/windows/">Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/clusterpi/">Raspberry Pi 4 Clúster</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/introduccion/">Introducción</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/configuracion/">Configuración</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/test/">Test</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/atmospheres/">Atmósferas estelares</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      
+      
+        <div class="post-card">
+  <a href="/es/posts/clusterpi/introduccion/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/clusterpi/images/pi4.png'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Introducción</h5>
+        <p class="card-text post-summary">Clúster de computacion con Raspberry Pi 4 El objetivo de este proyecto, es poder desarrollar un prototipo funcional de un cluster de computación con ordenadores de placa única u ordenadores de placa simple (SBC) de bajo coste mejor conocidos como Raspberry Pi. Detallaremos los pasos necesarios para este proyecto.  Responsables  MsC. Francisco Tapia Vázquez Dr. Victor De la Luz  Roadmap  Armado del cluster Configuración de los nodos Configuración del software Pruebas de estabilidad Optimización del cluster Lanzamiento de la versión 1.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">December 31, 2020</span>
+        <a
+        href="/es/posts/clusterpi/introduccion/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Ver más</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        <div class="post-card">
+  <a href="/es/posts/clusterpi/configuracion/inicial/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/clusterpi/images/terminal.jpg'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Configuración inicial</h5>
+        <p class="card-text post-summary">Configuración inicial Para la priumer parte, necesitamos instalar el sistema operatico en los nodos y en el nodo maestro. Pra ello ingresaremos a https://www.raspberrypi.org/software/ y descargamos Raspberry Pi Imager para nuestro OS y así, poder copiar el sistema operativo en la tarjeta micro SD. Hay que seguir los pasos que se especifican en el siguiente video.
+   
+Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la volvemos a conectar.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">December 31, 2020</span>
+        <a
+        href="/es/posts/clusterpi/configuracion/inicial/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Ver más</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        <div class="post-card">
+  <a href="/es/posts/clusterpi/test/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/clusterpi/images/terminal.jpg'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Test</h5>
+        <p class="card-text post-summary">Probando nuestro clúster Aplicaciones en paralelo Llamada de procesos Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:
+su - alpha cd /beta/ git clone https://gitlab.com/fratava/cluster-pi.git cd cluster-pi Para la primera prueba, vamos a comprobar que hay intercomunicación entre los nodos del clúster. Para evitar estar listando los núcleos que vamos a utilizar, crearemos una archivo en dónde le vamos a indicar a MPI los nodos con los cuales va a estalecer la comunicación dinámicamente.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">December 31, 2020</span>
+        <a
+        href="/es/posts/clusterpi/test/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Ver más</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+    </div>
+    <div class="paginator">
+      
+
+
+    </div>
+  </div>
+</section>
+
+
+      
+       
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navegación</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#acerca">Acerca de</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#skills">Habilidades</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#experiences">Experiencia</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#projects">Proyectos</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Posts Recientes</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#achievements">Galeria</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contáctame</h5>
+        <ul>
+          
+          <li><span>Direccion: </span> <span>Antigua Carretera a Pátzcuaro #8701 Colonia Ex-Hda. San José de la Huerta Morelia, Michoacán. México. C.P.580891</span></li>
+          
+          <li><span>Email1: </span> <span>f.tapia@irya.unam.mx</span></li>
+          
+          <li><span>Email2: </span> <span>ftapia@igeofisica.unam.mx</span></li>
+          
+          <li><span>Telefono: </span> <span>&#43;52 (443) 322 38 45 ext. 32845</span></li>
+          
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Puedes contactarme directamente llenando este cuestionario</p>
+        <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
+          <label for="email">Tu email</label>
+          <div>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+            <button type="submit">Suscríbete</button>
+          </div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      
+      <div class="col-md-10 text-center">© ftapia 2020 Copyright.</div>
+      
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+    <script src="/assets/js/list.js"></script>
+
+  </body>
+</html>

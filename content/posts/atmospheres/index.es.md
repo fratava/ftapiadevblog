@@ -1,7 +1,7 @@
 ---
 title: "Atmósferas estelares en estrellas de tipo solar
 a longitudes de onda milimétricas y submilimétricas"
-date: 2020-12-11T08:06:25+06:00
+date: 2020-12-31T10:16:25+06:00
 hero: /posts/atmospheres/images/alma.jpg
 description: Atmosferas estelares
 menu:

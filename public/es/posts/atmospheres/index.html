@@ -126,6 +126,133 @@ if (!doNotTrack) {
   
   
   
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/">Docker</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/introduccion/">¿Qué es Docker?</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/instalacion/">Instalación</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/linux/">Linux</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/macos/">MacOS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/windows/">Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/">Raspberry Pi 4 Clúster</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/introduccion/">Introducción</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/configuracion/">Configuración</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/test/">Test</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
     
     
   
@@ -157,7 +284,7 @@ if (!doNotTrack) {
         <div class="author-profile ml-auto align-self-lg-center">
           <img class="rounded-circle" src='/images/profilepic.png'/>
           <h5 class="author-name">Francisco Tapia Vazquez</h5>
-          <p>December 11, 2020</p>
+          <p>December 31, 2020</p>
         </div>
 
         <div class="title">
@@ -226,7 +353,33 @@ El desarrollo de estos modelos es necesario para estudios de discos de escombros
 
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
+    
+      
+        
+        
+        <div class="col-md-12 next-article">
+          <a href="/es/posts/clusterpi/introduccion/" class="btn btn-outline-info">
+            <span> <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>Introducción</span>
+          </a>
+        </div>
+      
     
   
 
@@ -405,7 +558,7 @@ El desarrollo de estos modelos es necesario para estudios de discos de escombros
       </div>
       
       <div class="col-md-4 col-sm-12">
-        <h5>Contáctame:</h5>
+        <h5>Contáctame</h5>
         <ul>
           
           <li><span>Direccion: </span> <span>Antigua Carretera a Pátzcuaro #8701 Colonia Ex-Hda. San José de la Huerta Morelia, Michoacán. México. C.P.580891</span></li>
@@ -423,37 +576,20 @@ El desarrollo de estos modelos es necesario para estudios de discos de escombros
       <div class="col-md-4 col-sm-12">
         
         <p>Puedes contactarme directamente llenando este cuestionario</p>
-        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-          <fieldset>
-
-            <div class="form-group">
-              <label for="contactName">Nombre <span class="required">*</span></label>
-              <input type="text" value="" size="32" id="contactName" name="contactName">
-            </div>
-
-            <div class="form-group">
-              <label for="contactEmail">Email <span class="required">*</span></label>
-              <input type="text" value="" size="32" id="contactEmail" name="contactEmail">
-            </div>
-
-            <div class="form-group">
-              <label for="contactSubject">Asunto<span class="required">*</span></label>
-              <input type="text" value="" size="32" id="contactSubject" name="contactSubject">
-            </div>
-
-            <div class="form-group">
-              <label for="contactMessage">Mensaje <span class="required">*</span></label>
-              <textarea cols="32" rows="15" id="contactMessage" name="contactMessage"></textarea>
-            </div>
-
-            <div data-netlify-recaptcha="true"></div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-info">Subir</button>
-            </div>
-
-          </fieldset>
-        </form> 
+        <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
+          <label for="email">Tu email</label>
+          <div>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+            <button type="submit">Suscríbete</button>
+          </div>
+        </form>
+        
       </div>
       
     </div>
@@ -461,22 +597,9 @@ El desarrollo de estos modelos es necesario para estudios de discos de escombros
   <hr />
   <div class="container">
     <div class="row text-left">
-      <div class="col-md-4">
-        <a id="theme" href="https://github.com/fratava" target="#">
-          <img src="/assets/images/pakal-blanco.png">
-          Github
-        </a>
-      </div>
-      <div class="col-md-4 text-center">© ftapia 2020 Copyright.</div>
-      <div class="col-md-4 text-right">
-        <a id="hugo" href="https://golang.org/">Powered by
-        <img
-          src="/assets/images/go.png"
-          alt="Hugo Logo"
-          height="18"
-        />
-        </a>
-      </div>
+      
+      <div class="col-md-10 text-center">© ftapia 2020 Copyright.</div>
+      
     </div>
   </div>
 </footer>

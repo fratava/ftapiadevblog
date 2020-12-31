@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instalando Docker en MacOS</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/pakal-blanco.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+<meta name="description" content="Instalando Docker en MacOS" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-163502824-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/es">
+      <img src="/images/pakal-negro.png"></a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/pakal-negro.png" class="d-none" id="main-logo">
+  <img src="/images/pakal-blanco.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/docker/">Docker</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/introduccion/">¿Qué es Docker?</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/docker/instalacion/">Instalación</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/linux/">Linux</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/es/posts/docker/instalacion/macos/">MacOS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/windows/">Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/">Raspberry Pi 4 Clúster</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/introduccion/">Introducción</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/configuracion/">Configuración</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/test/">Test</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/atmospheres/">Atmósferas estelares</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://ftapia.dev/posts/docker/images/macos.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/profilepic.png'/>
+          <h5 class="author-name">Francisco Tapia Vazquez</h5>
+          <p>December 31, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>Instalando Docker en MacOS</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/mBqRedDMwHY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div style="margin-top: rem;"></div></p>
+
+        </div>
+
+        
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/es/posts/docker/instalacion/windows/" class="btn btn-outline-info">
+          <span><i class="fas fa-chevron-circle-left"></i> </span>
+          <br />
+          <span>Instalando Docker en Windows</span>
+        </a>
+      </div>
+      
+    
+    
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/es/posts/docker/instalacion/linux/" class="btn btn-outline-info">
+            <span> <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>Instalando Docker en Linux</span>
+          </a>
+        </div>
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+      <hr />
+      
+      
+          <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function () {
+    
+    
+    if (window.location.hostname == "localhost") return;
+
+    var dsq = document.createElement("script");
+    dsq.type = "text/javascript";
+    dsq.async = true;
+    var disqus_shortname = "ftapia-dev";
+    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(dsq);
+  })();
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+<a href="https://disqus.com/" class="dsq-brlink"
+  >comments powered by <span class="logo-disqus">Disqus</span></a
+>
+
+      
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3"></h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents"></nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navegación</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#acerca">Acerca de</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#skills">Habilidades</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#experiences">Experiencia</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#projects">Proyectos</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Posts Recientes</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#achievements">Galeria</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contáctame</h5>
+        <ul>
+          
+          <li><span>Direccion: </span> <span>Antigua Carretera a Pátzcuaro #8701 Colonia Ex-Hda. San José de la Huerta Morelia, Michoacán. México. C.P.580891</span></li>
+          
+          <li><span>Email1: </span> <span>f.tapia@irya.unam.mx</span></li>
+          
+          <li><span>Email2: </span> <span>ftapia@igeofisica.unam.mx</span></li>
+          
+          <li><span>Telefono: </span> <span>&#43;52 (443) 322 38 45 ext. 32845</span></li>
+          
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Puedes contactarme directamente llenando este cuestionario</p>
+        <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
+          <label for="email">Tu email</label>
+          <div>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+            <button type="submit">Suscríbete</button>
+          </div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      
+      <div class="col-md-10 text-center">© ftapia 2020 Copyright.</div>
+      
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>

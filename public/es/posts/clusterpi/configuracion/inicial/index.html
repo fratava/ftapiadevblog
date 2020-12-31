@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Configuración inicial</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/pakal-blanco.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+<meta name="description" content="Configuración inicial" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-163502824-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/es">
+      <img src="/images/pakal-negro.png"></a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/pakal-negro.png" class="d-none" id="main-logo">
+  <img src="/images/pakal-blanco.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/">Docker</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/introduccion/">¿Qué es Docker?</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/instalacion/">Instalación</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/linux/">Linux</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/macos/">MacOS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/windows/">Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/clusterpi/">Raspberry Pi 4 Clúster</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/introduccion/">Introducción</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/clusterpi/configuracion/">Configuración</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/test/">Test</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/atmospheres/">Atmósferas estelares</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://ftapia.dev/posts/clusterpi/images/terminal.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/profilepic.png'/>
+          <h5 class="author-name">Francisco Tapia Vazquez</h5>
+          <p>December 31, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>Configuración inicial</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <h1 id="configuración-inicial">Configuración inicial</h1>
+<p>Para la priumer parte, necesitamos instalar el sistema operatico en los nodos y en el nodo maestro. Pra ello ingresaremos a <a href="https://www.raspberrypi.org/software/">https://www.raspberrypi.org/software/</a> y descargamos Raspberry Pi Imager para nuestro OS y así, poder copiar el sistema operativo en la tarjeta micro SD. Hay que seguir los pasos que se especifican en el siguiente video.</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/J024soVgEeM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div style="margin-top: rem;"></div></p>
+<p>Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la volvemos a conectar. Debemos seguir las siguientes instrucciones.</p>
+<p>Linux (Ubuntu)</p>
+<pre><code>Abrimos una terminal ++ctrl+alt+t++ y tecleamos lo siguiente:
+
+``` bash
+cd /mnt/boot
+touch ssh
+exit
+```
+
+Después de eso, desmontamos la memoria SD de la computadora.
+</code></pre>
+<p>MacOS</p>
+<pre><code>Abrimos una terminal y tecleamos lo siguiente:
+
+``` bash
+cd /Volumes/boot/
+touch ssh
+exit
+```
+Después de eso, desmontamos la memoria SD de la computadora.
+</code></pre>
+<h2 id="configurando-el-nodo-maestro">Configurando el nodo maestro</h2>
+<p>Una vez que completamos el paso anterior, colacamos la memoria SD en el el slot de la placa, conectamos el eliminador de corriente y el cable ethernet tanto en la placa como en el switch.
+Esperamos un par de minutos mientras se inicia el sistema operativo y abrimos la terminal de nuestro sistema operativo y tecleamos:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh pi@192.168.0.xx
+</code></pre></div><p>la contraseña es raspberry. Una vez que nos permite logearnos, veremos algo como esto</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> The programs included with the Debian GNU/Linux system are free software;
+ the exact distribution terms <span style="color:#66d9ef">for</span> each program are described in the
+ individual files in /usr/share/doc/*/copyright.
+
+ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+ permitted by applicable law.
+ Last login: Tue Dec <span style="color:#ae81ff">22</span> 23:34:38 <span style="color:#ae81ff">2020</span> from 192.168.0.xx
+
+ Wi-Fi is currently blocked by rfkill.
+ Use raspi-config to set the country before use.
+
+ pi@raspberrypi:~ $ 
+</code></pre></div><div class="alert alert-info">
+    <strong>Para obtener la ip de tu Raspberry, la conectamos al switch y después al router. Entramos a la página de gestión de nuestro router, generalmente la dirección del router es 192.168.0.1 la contraseña en la mayoría de los casos, se encuentra en el router. Una vez que nos logeamos, buscamos los dispotivos activos en nuestra red. Nuestro nodo maestro aparecerá como raspberry.</strong>
+</div>
+
+<p>y vamos a seguir el siguiente tutotrial.</p>
+<h3 id="cambiando-el-hostname-y-contraseña">Cambiando el hostname y contraseña</h3>
+<p>El nombre del hostname será &ldquo;master&rdquo;, pero podemos usar este tutorial para todos los nodos.</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/0mPOSlQ3gxo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<div style="margin-top: rem;"></div></p>
+<h3 id="instalando-los-paquetes-necesarios">Instalando los paquetes necesarios</h3>
+<p>Cuando reiniciamos la Raspberry Pi 4, vamos a actualizar los paquetes e instalar otro. Primero vamos actualizarlos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt update
+</code></pre></div><p>Después vamos a instalar los paquetes necesarios para la mayoría de pruebas que vamos a realizar.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install build-essential
+sudo apt-get install manpages-dev
+sudo apt-get install gfortran
+sudo apt-get install nfs-common
+sudo apt-get install nfs-kernel-server
+sudo apt-get install emacs
+sudo apt-get install openmpi-bin
+sudo apt-get install libopenmpi-dev
+sudo apt-get install openmpi-doc
+sudo apt-get install keychain
+sudo apt-get install nmap
+sudo apt-get install htop
+sudo apt-get install git
+</code></pre></div><h3 id="cpu-overclock">CPU (overclock)</h3>
+<p>La CPU del Raspeberry Pi 4 está basada en un arquitectura ARM. Cuenta con un procesador quad-core Cortex-A72 de 64 bits. Por defecto, tiene una frecuencia de reloj de 1.5GHz para proteger al procesador de las altas temperaturas. En nuestro caso, buscamos obtener la mejor relación entre la frecuencia del reloj, voltaje y temperatura. Es necesario aclarar que no en todos los procesadores se puede elevar la frecuencia de reloj más allá de los 2.0 GHz. Esto se debe principalmente a que cuando se fabrican los procesadores, el silicio puede tener algunas imperfecciones, las cuales afectan directamente la velocidad del reloj. Tras un serie de pruebas, hemos observado que todos los Raspberry Pi 4 pueden alcanzar 2.0 GHz sin aumento drástico de temperatura (utilizando disipadores), y sólo algunos pudieron alcanzar los 2.14 GHz sin fallas por parte del sistema operativo. Por lo tanto, podemos hacer un overclock al procesador y llevarlo de manera segura hasta los 2.0 GHz.</p>
+<p>Para poder realizar overclock, encendemos nuestro dispositivo y editamos el archivo config.txt. Es necesario contar con privilegios de super usuario para esto. Entonces tecleamos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /boot/config.txt
+</code></pre></div><p>Ahora, dentro del editor de texto tendremos que buscar la sección marcada como [pi4], bajo la cual están los ajustes específicos para este modelo de Raspberry Pi. Esto es muy bueno porque significa que si utilizáis la misma tarjeta SD con el sistema operativo en otra Raspberry Pi de generación anterior, no se aplicarán los parámetros de overclock.</p>
+<p>Hay que ir al final del bloque de ajustes bajo [pi4] y añadir las siguientes líneas:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">over_voltage<span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>
+arm_freq<span style="color:#f92672">=</span><span style="color:#ae81ff">2000</span>
+</code></pre></div><p>El primer ajuste, &ldquo;over_voltage=6&rdquo;, incrementa el voltaje de funcionamiento en aproximadamente 0.15V. Esto es necesario ya que la mayoría de Raspberry Pi 4 no arrancarán a 2.0 GHz sin este extra. Más tarde, si se quiere, se puede cambiar el valor 4 por un 2, lo que supondría un incremento de voltaje de 0.05V para reducir el calor generado, pero no hay garantías de que funcione correctamente.</p>
+<div class="alert alert-danger">
+    <strong>Es altamente recomendable no poner más de 6 al valor de over_voltage, ya que podría ser peligroso para la integridad del procesador.</strong>
+</div>
+
+<div class="alert alert-warning">
+    <strong>Si la pantalla se queda en blanco o el dispositivo comienza un ciclo infinito de reinicios, tendríamos que meter la tarjeta SD en otro equipo y volver a editar el fichero fichero config.txt y esta vez edita el parámetro arm_freq, reduciendo su valor de 50 en 50 MHz. Si tienes que hacer esto, significa que tu procesador no es candidato a hacer overclock. En este caso sería mejor establecer una frecuencia de reloj de referencia para todos los nodos, por ejemplo 1800 (1.8 GHz).</strong>
+</div>
+
+<p>El segundo ajuste, &ldquo;arm_freq=2000&rdquo;, establece la frecuencia de funcionamiento de los cuatro cores ARM a 2.0 GHz. Te recomendamos no elevar más este valor, ya que este es el máximo establecido por el firmware (que, por cierto, hasta hace poco era 1.75 GHz).</p>
+<p>Una vez que añadimos estas líneas pulsamos ++ctrl+o++ y ponemos ++enter++, después tecleamos ++ctrl+x++.</p>
+<p>El siguiente paso, muy importante antes de reiniciar, es actualizar a la última versión del firmware, la que nos asegura que será compatible con la velocidad de 2.0 GHz. Para ello, hay que introducir el siguiente comando:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rpi-update
+</code></pre></div><p>Esto cargará el actualizador de Raspberry Pi, que se encargará de manera automática de actualizar el firmware a la última versión. Cuando termine, reiniciamos el sistema con el comando</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo reboot
+</code></pre></div><p>Cuando vuelva a iniciar, podemos hacer un seguimiento de la frecuancia del reloj con el comando</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">watch -n <span style="color:#ae81ff">1</span> vcgencmd measure_clock arm
+</code></pre></div><p>Y listo, hemos configurado nuestro dispositivo para obtener velocidades más altas de procesamiento.</p>
+<h2 id="configurando-los-demás-nodos">Configurando los demás nodos</h2>
+<h3 id="configuración-inicial-1">Configuración inicial</h3>
+<p>Para cada uno de los nodos, cambiamos el <a href="#cambiando-el-hostname-y-contrasena">hostname</a> por nodox y cambiamos la frecuencia del procesador como lo vimos en la sección <a href="#cpu-overclock">overclock</a>.</p>
+<div class="alert alert-info">
+    <strong>Es recomendable ir conectando y configurando un raspberry a la vez para no tener conflicto con las direcciones ip.</strong>
+</div>
+
+<div class="alert alert-info">
+    <strong>La contraseña debe ser la misma para cada nodo que conectemos. Esto es para facilitar su manejo.</strong>
+</div>
+
+<h3 id="instalando-los-paquetes">Instalando los paquetes</h3>
+<p>Para instalar los paquetes necesarios, podemos iniciar sesión en cada nodo de la siguiente manera:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh pi@192.168.0.xx
+</code></pre></div><p>e instalarlos como lo vimos <a href="#instalando-los-paquetes-necesarios">anteriormente</a>.</p>
+<p>Otra manera de instalarlos es utilizar el paquete fabric en python. Para ello, lo instalamos en el nodo maestro de la siguiente manera</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install fabric
+</code></pre></div><p>Una vez instalado, creamos un archivo llamado fabfile.py y escribimos:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> fabric.api <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+env<span style="color:#f92672">.</span>hosts <span style="color:#f92672">=</span> [
+    <span style="color:#e6db74">&#39;pi@192.168.0.27&#39;</span>,
+    <span style="color:#e6db74">&#39;pi@192.168.0.28&#39;</span>,
+    <span style="color:#e6db74">&#39;pi@192.168.0.29&#39;</span>,
+]
+
+env<span style="color:#f92672">.</span>password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;tupassword&#39;</span>
+
+<span style="color:#a6e22e">@parallel</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cmd</span>(command):
+    sudo(command)
+</code></pre></div><p>En el comando <code>env.hosts</code> ponemos la dirección de cada uno de los nodos. Para este ejemplo, estamos utilizando un maestro y tres nodos de computación. Los nodos los hemos configurado para que sigan una secuencia de direcciones ip, pero puede ser cualquier orden de ip&rsquo;s.</p>
+<p>La forma en que instalamos los paquetes es la siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fab cmd:<span style="color:#e6db74">&#34;apt-get install -y update&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y build-essential&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y manpages-dev&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y gfortran&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y nfs-common&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y nfs-kernel-server&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y emacs&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y openmpi-bin&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y libopenmpi-dev&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y openmpi-doc&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y keychain&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y nmap&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y htop&#34;</span>
+fab cmd:<span style="color:#e6db74">&#34;apt-get install -y git&#34;</span>
+</code></pre></div><div class="alert alert-success">
+    <strong>Hemos terminado la segunda parte de nuestro proceso. En esta parte, hemos configurado el master y los nodos con la paquetería necesaria. Ahora, nuestro objetivo será que se comuniquen entre ellos y que trabajen coordinadamente.</strong>
+</div>
+
+
+        </div>
+
+        
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/es/posts/clusterpi/introduccion/" class="btn btn-outline-info">
+          <span><i class="fas fa-chevron-circle-left"></i> </span>
+          <br />
+          <span>Introducción</span>
+        </a>
+      </div>
+      
+    
+    
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/es/posts/clusterpi/test/" class="btn btn-outline-info">
+            <span> <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>Test</span>
+          </a>
+        </div>
+      
+    
+  
+
+  
+
+  
+
+</div>
+
+      <hr />
+      
+      
+          <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function () {
+    
+    
+    if (window.location.hostname == "localhost") return;
+
+    var dsq = document.createElement("script");
+    dsq.type = "text/javascript";
+    dsq.async = true;
+    var disqus_shortname = "ftapia-dev";
+    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(dsq);
+  })();
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+<a href="https://disqus.com/" class="dsq-brlink"
+  >comments powered by <span class="logo-disqus">Disqus</span></a
+>
+
+      
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3"></h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#configurando-el-nodo-maestro">Configurando el nodo maestro</a>
+      <ul>
+        <li><a href="#cambiando-el-hostname-y-contraseña">Cambiando el hostname y contraseña</a></li>
+        <li><a href="#instalando-los-paquetes-necesarios">Instalando los paquetes necesarios</a></li>
+        <li><a href="#cpu-overclock">CPU (overclock)</a></li>
+      </ul>
+    </li>
+    <li><a href="#configurando-los-demás-nodos">Configurando los demás nodos</a>
+      <ul>
+        <li><a href="#configuración-inicial-1">Configuración inicial</a></li>
+        <li><a href="#instalando-los-paquetes">Instalando los paquetes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navegación</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#acerca">Acerca de</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#skills">Habilidades</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#experiences">Experiencia</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#projects">Proyectos</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Posts Recientes</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#achievements">Galeria</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contáctame</h5>
+        <ul>
+          
+          <li><span>Direccion: </span> <span>Antigua Carretera a Pátzcuaro #8701 Colonia Ex-Hda. San José de la Huerta Morelia, Michoacán. México. C.P.580891</span></li>
+          
+          <li><span>Email1: </span> <span>f.tapia@irya.unam.mx</span></li>
+          
+          <li><span>Email2: </span> <span>ftapia@igeofisica.unam.mx</span></li>
+          
+          <li><span>Telefono: </span> <span>&#43;52 (443) 322 38 45 ext. 32845</span></li>
+          
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Puedes contactarme directamente llenando este cuestionario</p>
+        <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
+          <label for="email">Tu email</label>
+          <div>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+            <button type="submit">Suscríbete</button>
+          </div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      
+      <div class="col-md-10 text-center">© ftapia 2020 Copyright.</div>
+      
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>

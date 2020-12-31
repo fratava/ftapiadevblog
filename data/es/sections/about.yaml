@@ -27,10 +27,6 @@ socialLinks:
   icon: "fas fa-envelope"
   url: "f.tapia@irya.unam.mx"
 
-- name: Email
-  icon: "fas fa-at"
-  url: "ftapia@igeofisica.unam.mx"
-
 - name: Github
   icon: "fab fa-github"
   url: "https://www.github.com/example"

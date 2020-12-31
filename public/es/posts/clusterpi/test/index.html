@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/pakal-blanco.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+<meta name="description" content="Test" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-163502824-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/es">
+      <img src="/images/pakal-negro.png"></a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/pakal-negro.png" class="d-none" id="main-logo">
+  <img src="/images/pakal-blanco.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/">Docker</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/introduccion/">¿Qué es Docker?</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/instalacion/">Instalación</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/linux/">Linux</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/macos/">MacOS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/windows/">Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/clusterpi/">Raspberry Pi 4 Clúster</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/introduccion/">Introducción</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/configuracion/">Configuración</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/es/posts/clusterpi/test/">Test</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/atmospheres/">Atmósferas estelares</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://ftapia.dev/posts/clusterpi/images/terminal.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/profilepic.png'/>
+          <h5 class="author-name">Francisco Tapia Vazquez</h5>
+          <p>December 31, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>Test</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <h1 id="probando-nuestro-clúster">Probando nuestro clúster</h1>
+<h2 id="aplicaciones-en-paralelo">Aplicaciones en paralelo</h2>
+<h3 id="llamada-de-procesos">Llamada de procesos</h3>
+<p>Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su - alpha
+cd /beta/
+git clone https://gitlab.com/fratava/cluster-pi.git
+cd cluster-pi
+</code></pre></div><p>Para la primera prueba, vamos a comprobar que hay intercomunicación entre los nodos del clúster. Para evitar estar listando los núcleos que vamos a utilizar, crearemos una archivo en dónde le vamos a indicar a MPI los nodos con los cuales va a estalecer la comunicación dinámicamente. Es muy recomendable contar con este archivo, ya que de otra manera hay que indicarle explícitamente los núcleos de los nodos que vamos a utilizar.</p>
+<p>Creamos el archivo llamado <code>#!bash machinefile</code> de la siguiente manera</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">emacs machinefile
+</code></pre></div><p>y escribimos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nodo1
+nodo2
+nodo3
+master
+</code></pre></div><p>pulsamos ctrl+s y ctrl+x.</p>
+<div class="alert alert-info">
+    <strong>Si añadimos más nodos de cómputo a nuestro clúster o queremos hacer una segmentación, debemos modificar nuestro <code>machinefile</code> para agregar o remover nodos.</strong>
+</div>
+
+<p>Compilamos el código</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mpicc call-procs.c -o call-procs
+</code></pre></div><p>y los ejecutamos</p>
+<p>Con machinefile</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mpiexec -machinefile machinefile -n <span style="color:#ae81ff">16</span> ./call-procs
+</code></pre></div><p>Sin machinefile</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mpiexec -H master,master,master,master,nodo1,nodo1,nodo1,nodo1,nodo2,nodo2,nodo2,nodo2,nodo3,nodo3,nodo3,nodo3 ./call-procs
+</code></pre></div><p>Si todo marcha bien debemos tener una salida como esta</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Llamada al proceso <span style="color:#ae81ff">3</span> de <span style="color:#ae81ff">16</span> en master 
+Llamada al proceso <span style="color:#ae81ff">2</span> de <span style="color:#ae81ff">16</span> en master 
+Llamada al proceso <span style="color:#ae81ff">0</span> de <span style="color:#ae81ff">16</span> en master 
+Llamada al proceso <span style="color:#ae81ff">1</span> de <span style="color:#ae81ff">16</span> en master 
+Llamada al proceso <span style="color:#ae81ff">15</span> de <span style="color:#ae81ff">16</span> en nodo3 
+Llamada al proceso <span style="color:#ae81ff">12</span> de <span style="color:#ae81ff">16</span> en nodo3 
+Llamada al proceso <span style="color:#ae81ff">5</span> de <span style="color:#ae81ff">16</span> en nodo1 
+Llamada al proceso <span style="color:#ae81ff">6</span> de <span style="color:#ae81ff">16</span> en nodo1 
+Llamada al proceso <span style="color:#ae81ff">14</span> de <span style="color:#ae81ff">16</span> en nodo3 
+Llamada al proceso <span style="color:#ae81ff">8</span> de <span style="color:#ae81ff">16</span> en nodo2 
+Llamada al proceso <span style="color:#ae81ff">13</span> de <span style="color:#ae81ff">16</span> en nodo3 
+Llamada al proceso <span style="color:#ae81ff">7</span> de <span style="color:#ae81ff">16</span> en nodo1 
+Llamada al proceso <span style="color:#ae81ff">9</span> de <span style="color:#ae81ff">16</span> en nodo2 
+Llamada al proceso <span style="color:#ae81ff">4</span> de <span style="color:#ae81ff">16</span> en nodo1 
+Llamada al proceso <span style="color:#ae81ff">10</span> de <span style="color:#ae81ff">16</span> en nodo2 
+Llamada al proceso <span style="color:#ae81ff">11</span> de <span style="color:#ae81ff">16</span> en nodo2 
+</code></pre></div><p>Recordemos que las llamadas son aleatorias.</p>
+<div class="alert alert-info">
+    <strong><p>En algunas ocasiones, podrías no tener esta salida. En este caso deberás revisar que tu cable de red está bien conectado, tu raspberry está prendida o tu volumen está montado. Para verificar esto último podemos teclear</p>
+<pre><code>```bash
+cd /beta
+ls
+```
+
+Si el folder está vacío debemos teclear
+
+```bash
+sudo mount master:/beta /beta
+```
+</code></pre>
+<p>y volvemos a ejecutar el código.</p>
+</strong>
+</div>
+
+<h3 id="calculando-pi-en-paralelo">Calculando $\pi$ en paralelo</h3>
+<p>Ahora calcularemos $\pi$ de forma paralela. Para esto, haremos una integración numérica. La idea detrás de este algoritmo la podemos encontrar en esta <a href="http://cercs-ed.gatech.edu/node/14">página</a>.</p>
+<p>Procedemos entonces a ejecutar el código. Primero lo compilamos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mpicc pi_mpi.c -o pi_mpi
+</code></pre></div><p>y lo ejecutamos</p>
+<p>Con machinefile</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mpiexec -machinefile machinefile -n <span style="color:#ae81ff">16</span> ./pi_mpi
+</code></pre></div><p>Sin machinefile</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mpiexec -H master,master,master,master,nodo1,nodo1,nodo1,nodo1,nodo2,nodo2,nodo2,nodo2,nodo3,nodo3,nodo3,nodo3 ./pi_mpi
+</code></pre></div><p>En este caso no solicitará el número de rectángulos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e">#######################################################</span>
+Master node name: master 
+
+Enter the number of intervals:
+</code></pre></div><p>El valor queda al criterio del usuario. A continuación, te mostramos a modo de ilustración, los resultados que se obtienen para 300000 rectángulos cuando se calcula $\pi$ con diferentes números de procesadores, los cuales los designaremos con &ldquo;n=??&rdquo; y <code>#!bash time</code> antes de la ejecución para medir el tiempo.</p>
+<p>n=1</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n <span style="color:#ae81ff">1</span> ./pi_mpi
+
+    <span style="color:#75715e">#######################################################</span>
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    <span style="color:#ae81ff">300000</span>
+
+
+    *** Number of processes: <span style="color:#ae81ff">1</span> 
+
+    Pi Calculado <span style="color:#f92672">=</span> 3.141592653590713268840772798285
+                Pi <span style="color:#f92672">=</span> 3.141592653589793115997963468544
+    Error relativo <span style="color:#f92672">=</span> 0.000000000000920152842809329741
+
+    real	8m54.547s
+    user	8m47.000s
+    sys	0m0.160s
+</code></pre></div><p>n=2</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n <span style="color:#ae81ff">2</span> ./pi_mpi
+
+    <span style="color:#75715e">#######################################################</span>
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    <span style="color:#ae81ff">300000</span>
+
+
+    *** Number of processes: <span style="color:#ae81ff">2</span> 
+
+    Pi Calculado <span style="color:#f92672">=</span> 3.141592653590711492483933398034
+                Pi <span style="color:#f92672">=</span> 3.141592653589793115997963468544
+    Error relativo <span style="color:#f92672">=</span> 0.000000000000918376485969929490
+
+    real	4m36.129s
+    user	8m58.883s
+    sys	0m0.211s
+</code></pre></div><p>n=4</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n <span style="color:#ae81ff">4</span> ./pi_mpi
+
+    <span style="color:#75715e">#######################################################</span>
+    Master node name: nodo3 
+
+    Enter the number of intervals:
+
+    <span style="color:#ae81ff">300000</span>
+
+
+    *** Number of processes: <span style="color:#ae81ff">4</span> 
+
+    Pi Calculado <span style="color:#f92672">=</span> 3.141592653590712824751562948222
+                Pi <span style="color:#f92672">=</span> 3.141592653589793115997963468544
+    Error relativo <span style="color:#f92672">=</span> 0.000000000000919708753599479678
+
+    real	2m19.781s
+    user	9m10.213s
+    sys	0m0.228s
+</code></pre></div><p>n=8</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n <span style="color:#ae81ff">8</span> ./pi_mpi
+
+    <span style="color:#75715e">#######################################################</span>
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    <span style="color:#ae81ff">300000</span>
+
+
+    *** Number of processes: <span style="color:#ae81ff">8</span> 
+
+    Pi Calculado <span style="color:#f92672">=</span> 3.141592653590715045197612198535
+                Pi <span style="color:#f92672">=</span> 3.141592653589793115997963468544
+    Error relativo <span style="color:#f92672">=</span> 0.000000000000921929199648729991
+
+    real	1m26.563s
+    user	4m44.188s
+    sys	0m12.459s
+</code></pre></div><p>n=16</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n <span style="color:#ae81ff">16</span> ./pi_mpi
+
+    <span style="color:#75715e">#######################################################</span>
+    Master node name: master 
+
+    Enter the number of intervals:
+
+    <span style="color:#ae81ff">300000</span>
+
+
+    *** Number of processes: <span style="color:#ae81ff">16</span> 
+
+    Pi Calculado <span style="color:#f92672">=</span> 3.141592653590720818357340249349
+                Pi <span style="color:#f92672">=</span> 3.141592653589793115997963468544
+    Error relativo <span style="color:#f92672">=</span> 0.000000000000927702359376780805
+
+    real	0m59.547s
+    user	2m41.094s
+    sys	0m30.697s
+</code></pre></div><p>Como podemos darnos cuenta, el tiempo de ejecución, baja a medida que aumentamos el número de procesadores.</p>
+<div class="alert alert-success">
+    <strong>Ahora que tenemos nuestro clúster funcionando, desarrollaremos códigos parelelos. Pero como lo hemos mencionado en la <a href="/introduccion/#en-que-se-utiliza-el-computo-de-alto-rendimiento">introducción</a>, podemos utilizar nuestro clúster para diversas tareas.</strong>
+</div>
+
+
+        </div>
+
+        
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/es/posts/clusterpi/configuracion/inicial/" class="btn btn-outline-info">
+          <span><i class="fas fa-chevron-circle-left"></i> </span>
+          <br />
+          <span>Configuración inicial</span>
+        </a>
+      </div>
+      
+    
+    
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/es/posts/docker/introduccion/" class="btn btn-outline-info">
+            <span> <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>¿Qué es Docker?</span>
+          </a>
+        </div>
+      
+    
+  
+
+  
+
+  
+
+  
+
+</div>
+
+      <hr />
+      
+      
+          <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function () {
+    
+    
+    if (window.location.hostname == "localhost") return;
+
+    var dsq = document.createElement("script");
+    dsq.type = "text/javascript";
+    dsq.async = true;
+    var disqus_shortname = "ftapia-dev";
+    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(dsq);
+  })();
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+<a href="https://disqus.com/" class="dsq-brlink"
+  >comments powered by <span class="logo-disqus">Disqus</span></a
+>
+
+      
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3"></h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#aplicaciones-en-paralelo">Aplicaciones en paralelo</a>
+      <ul>
+        <li><a href="#llamada-de-procesos">Llamada de procesos</a></li>
+        <li><a href="#calculando-pi-en-paralelo">Calculando $\pi$ en paralelo</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navegación</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#acerca">Acerca de</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#skills">Habilidades</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#experiences">Experiencia</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#projects">Proyectos</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Posts Recientes</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#achievements">Galeria</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contáctame</h5>
+        <ul>
+          
+          <li><span>Direccion: </span> <span>Antigua Carretera a Pátzcuaro #8701 Colonia Ex-Hda. San José de la Huerta Morelia, Michoacán. México. C.P.580891</span></li>
+          
+          <li><span>Email1: </span> <span>f.tapia@irya.unam.mx</span></li>
+          
+          <li><span>Email2: </span> <span>ftapia@igeofisica.unam.mx</span></li>
+          
+          <li><span>Telefono: </span> <span>&#43;52 (443) 322 38 45 ext. 32845</span></li>
+          
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Puedes contactarme directamente llenando este cuestionario</p>
+        <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
+          <label for="email">Tu email</label>
+          <div>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+            <button type="submit">Suscríbete</button>
+          </div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      
+      <div class="col-md-10 text-center">© ftapia 2020 Copyright.</div>
+      
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>

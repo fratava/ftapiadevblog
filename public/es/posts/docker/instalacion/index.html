@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instalación</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/pakal-blanco.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+    <link rel="stylesheet" href="/assets/css/layouts/list.css">
+    <link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-163502824-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/es">
+      <img src="/images/pakal-negro.png"></a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/pakal-negro.png" class="d-none" id="main-logo">
+  <img src="/images/pakal-blanco.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  
+  
+    
+  
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/docker/">Docker</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/introduccion/">¿Qué es Docker?</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/docker/instalacion/">Instalación</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/linux/">Linux</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/macos/">MacOS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/windows/">Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/">Raspberry Pi 4 Clúster</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/introduccion/">Introducción</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/configuracion/">Configuración</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/test/">Test</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/atmospheres/">Atmósferas estelares</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      
+      
+        <div class="post-card">
+  <a href="/es/posts/docker/instalacion/windows/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/docker/images/win10.png'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Instalando Docker en Windows</h5>
+        <p class="card-text post-summary">Ahora que sabemos lo que es docker, vamos a instalarlo en nuestra computadora. Antes de instalarlo, es recomendable actualizar nuestro Windows a la versión más actual.
+Opcionalmente, podemos instalar algunos programas que nos ayudarán a tner una mejor experiencia de uso. Si ya tienes instalados estos programas, puedes dirigirte a la sección &ndash;.
+Instalación de software esencial La terminal de Windows Para poder interactuar con docker, es necesario tener instalado una terminal.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">December 31, 2020</span>
+        <a
+        href="/es/posts/docker/instalacion/windows/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Ver más</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        <div class="post-card">
+  <a href="/es/posts/docker/instalacion/macos/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/docker/images/macos.jpg'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Instalando Docker en MacOS</h5>
+        <p class="card-text post-summary"></p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">December 31, 2020</span>
+        <a
+        href="/es/posts/docker/instalacion/macos/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Ver más</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        <div class="post-card">
+  <a href="/es/posts/docker/instalacion/linux/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/docker/images/linux.jpg'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Instalando Docker en Linux</h5>
+        <p class="card-text post-summary">En el caso de linux, las cosas son más simples para trabajar con docker. En primer lugar, la mayoría de las distribuciones modernas (Ubuntu, CentOS, Fedora, etc.) incluyen por defecto un servidor gráfico, ya sea X.org o Wayland, por lo que para trabajar con docker y con proyectos open source, sólo es necesario verificar que contemos con git para el control de versiones e instalar docker.
+En el siguiente video, te muestro como verificar e instalar git y docker.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">December 31, 2020</span>
+        <a
+        href="/es/posts/docker/instalacion/linux/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Ver más</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+    </div>
+    <div class="paginator">
+      
+
+
+    </div>
+  </div>
+</section>
+
+
+      
+       
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navegación</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#acerca">Acerca de</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#skills">Habilidades</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#experiences">Experiencia</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#projects">Proyectos</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Posts Recientes</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#achievements">Galeria</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contáctame</h5>
+        <ul>
+          
+          <li><span>Direccion: </span> <span>Antigua Carretera a Pátzcuaro #8701 Colonia Ex-Hda. San José de la Huerta Morelia, Michoacán. México. C.P.580891</span></li>
+          
+          <li><span>Email1: </span> <span>f.tapia@irya.unam.mx</span></li>
+          
+          <li><span>Email2: </span> <span>ftapia@igeofisica.unam.mx</span></li>
+          
+          <li><span>Telefono: </span> <span>&#43;52 (443) 322 38 45 ext. 32845</span></li>
+          
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Puedes contactarme directamente llenando este cuestionario</p>
+        <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
+          <label for="email">Tu email</label>
+          <div>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+            <button type="submit">Suscríbete</button>
+          </div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      
+      <div class="col-md-10 text-center">© ftapia 2020 Copyright.</div>
+      
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+    <script src="/assets/js/list.js"></script>
+
+  </body>
+</html>

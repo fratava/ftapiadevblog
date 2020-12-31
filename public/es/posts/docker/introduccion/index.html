@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>¿Qué es Docker?</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/pakal-blanco.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+<meta name="description" content="¿Qué es Docker?" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-163502824-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/es">
+      <img src="/images/pakal-negro.png"></a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/pakal-negro.png" class="d-none" id="main-logo">
+  <img src="/images/pakal-blanco.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/docker/">Docker</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/es/posts/docker/introduccion/">¿Qué es Docker?</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/instalacion/">Instalación</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/linux/">Linux</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/macos/">MacOS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/windows/">Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/">Raspberry Pi 4 Clúster</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/introduccion/">Introducción</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/clusterpi/configuracion/">Configuración</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/test/">Test</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/atmospheres/">Atmósferas estelares</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://ftapia.dev/posts/docker/images/Moby-and-Friends.jpeg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/profilepic.png'/>
+          <h5 class="author-name">Francisco Tapia Vazquez</h5>
+          <p>December 31, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>¿Qué es Docker?</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <p>Para entender lo que significa Docker, es necesario dar un breve repaso a los contenedores.</p>
+<h2 id="qué-es-un-contenedor">¿Qué es un contenedor?</h2>
+<p>Un contenedor o Container, es un sandbox donde es posible ejecutar servicios y procesos en un entorno protegido. Cada contenedor se ejecuta en un Host de Contenedor, que puede ser una máquina de Windows, MacOs o Linux. Los principales beneficios de los contenedores, si se comparan con las máquinas virtuales clásicas, son los siguientes:</p>
+<ul>
+<li>La implementación es mucho más rápida.</li>
+<li>La administración es mínima.</li>
+<li>No es necesario aplicar parches y la huella es baja.</li>
+</ul>
+<h2 id="por-qué-contenedores">¿Por qué contenedores?</h2>
+<p>Los contenedores no son para todos y los escenarios no son muchos, en detalles:</p>
+<ul>
+<li>Sitios web</li>
+<li>Servicios</li>
+<li>Procesos</li>
+<li>Aplicaciones</li>
+</ul>
+<p>Como servidor web, se puede utilizar el motor más importante, como IIS con .Net, Apache y Ngnix también; Como aplicación, podemos encontrar SQL Server para Windows o Linux y el motor de base de datos más importante.</p>
+<p>En el ámbito científico, un contenedor nos proporciona una plataforma para crear escenarios avanzados que se pueden replicar fácilmente. En este sentido, un contenedor nos permite escalar códigos y adaptarlos a distintos tipos de infraestructura. Un punto importante para los desarrolladores de código, es que se pueden utilizar contenedores independientes para resolver los problemas de compatibilidad. Pensemos en el siguiente ejemplo.</p>
+<div class="alert alert-dark">
+    <strong>Hemos desarrollado un código que resuelve numéricamente un sistema de ecuaciones. Nuestro código lo hemos desarrollado sobre un versión específica de fortran. Inicialmente los hemos compilado y probado en nuestra computadora y funciona correctamente. Llega el momento en que queremos compartir nuestro desarrollo con la comunidad científica, pero debemos enfrentarnos al reto de que no todo el mundo cuenta con el mismo compilador o peor aún, no todo el mundo está familiarizado con el sistema operativo. Esto hace muy dificil e incluso imposible, poder colaborar con los demás miembros de la comunidad. Entonces, nos interesaría encontrar una manera de portar el código, independientemente de la arquitectura del sistema o el sistema operativo de una manera fácil.</strong>
+</div>
+
+<h2 id="docker">Docker</h2>
+<p>Cuando hablamos de contenedores, no podemos evitar hablar de Docker, quizás la plataforma de contenedores más conocida. Docker es una herramienta que está diseñada para beneficiar tanto a los desarrolladores como a los administradores de sistemas. Para los desarrolladores, significa que pueden centrarse en escribir código sin preocuparse por el sistema en el que finalmente se ejecutará. También les permite obtener una ventaja al usar uno de los miles de programas que ya están diseñados para ejecutarse en un contenedor Docker como parte de su aplicación. Para el personal de operaciones, Docker ofrece flexibilidad y reduce potencialmente la cantidad de sistemas necesarios debido a su tamaño reducido y menores gastos generales.</p>
+<h2 id="por-qué-no-utilizar-una-máquina-virtual">¿Por qué no utilizar una máquina virtual?</h2>
+<h3 id="qué-es-una-máquina-virtual">¿Qué es una máquina virtual?</h3>
+<p>Una máquina virtual es un sistema que actúa exactamente como una computadora.</p>
+<p>En términos simples, hace posible ejecutar lo que parece estar en muchas computadoras separadas en hardware, es decir, una computadora. Cada máquina virtual requiere su sistema operativo subyacente y luego se virtualiza el hardware.</p>
+<h3 id="docker-vs-vm">Docker vs VM</h3>
+<p>Las diferencias significativas son la compatibilidad con el sistema operativo, la seguridad, la portabilidad y el rendimiento.</p>
+<h3 id="soporte-del-sistema-operativo">Soporte del sistema operativo</h3>
+<img src="https://www.servidoresadmin.com/wp-content/uploads/2020/06/docker_vm_vs_contenedores.png"
+    
+    
+        width="900"
+    
+    
+    
+    
+        class="center"
+    
+>
+
+<div style="margin-top: 3rem;"></div>
+<p>El soporte del sistema operativo de la máquina virtual y el contenedor Docker es muy diferente. En la imagen de arriba, puede ver que cada máquina virtual tiene su sistema operativo invitado por encima del sistema operativo host, lo que hace que las máquinas virtuales sean pesadas. Mientras que, por otro lado, los contenedores Docker comparten el sistema operativo host, y es por eso que son livianos.</p>
+<p>Compartir el sistema operativo host entre los contenedores los hace muy ligeros y les ayuda a iniciarse en solo unos segundos. Por lo tanto, la sobrecarga para administrar el sistema de contenedores es muy baja en comparación con la de las máquinas virtuales.</p>
+<p>Los contenedores de la ventana acoplable son adecuados para situaciones en las que desea ejecutar varias aplicaciones en un solo kernel de sistema operativo. Pero si tiene aplicaciones o servidores que deben ejecutarse en diferentes tipos de sistemas operativos, entonces se requieren máquinas virtuales.</p>
+<h3 id="seguridad">Seguridad</h3>
+<p>La máquina virtual no comparte el sistema operativo y existe un fuerte aislamiento en el kernel del host. Por lo tanto, son más seguros en comparación con los contenedores. Un contenedor tiene muchos riesgos de seguridad y vulnerabilidades, ya que los contenedores tienen un núcleo de host compartido.</p>
+<p>Además, dado que los recursos de la ventana acoplable se comparten y no tienen un espacio de nombres, un atacante puede explotar todos los contenedores de un clúster si obtiene acceso incluso a un contenedor. En una máquina virtual, no obtiene acceso directo a los recursos y el hipervisor está ahí para restringir el uso de recursos en una VM.</p>
+<h3 id="portabilidad">Portabilidad</h3>
+<p>Los contenedores Docker son fácilmente portables porque no tienen sistemas operativos separados. Un contenedor se puede portar a un sistema operativo diferente y puede iniciarse inmediatamente. Por otro lado, las máquinas virtuales tienen sistemas operativos separados, por lo que portar una máquina virtual es difícil en comparación con los contenedores, y también lleva mucho tiempo portar una máquina virtual debido a su tamaño.</p>
+<p>Para propósitos de desarrollo donde las aplicaciones deben desarrollarse y probarse en diferentes plataformas, los contenedores Docker son la opción ideal.</p>
+<h3 id="desempeño">Desempeño</h3>
+<p>Comparar las máquinas virtuales y los contenedores Docker no sería justo porque ambos se utilizan para diferentes propósitos. Pero la arquitectura ligera de Docker es característica que consume menos recursos lo convierte en una mejor opción que una máquina virtual. Como resultado, los contenedores pueden iniciarse muy rápido en comparación con el de las máquinas virtuales, y el uso de recursos varía según la carga o el tráfico en ellos.</p>
+<p>A diferencia del caso de las máquinas virtuales, no es necesario asignar recursos de forma permanente a los contenedores. Escalar y duplicar los contenedores también es una tarea fácil en comparación con la de las máquinas virtuales, ya que no es necesario instalar un sistema operativo en ellas.</p>
+<h3 id="resumen">Resumen</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Máquina virtual</th>
+<th style="text-align:center">Contenedor Docker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Aislamiento de procesos a nivel de hardware</td>
+<td style="text-align:center">Aislamiento de procesos a nivel de SO</td>
+</tr>
+<tr>
+<td style="text-align:center">Cada máquina virtual tiene un sistema operativo independiente</td>
+<td style="text-align:center">Cada contenedor puede compartir SO</td>
+</tr>
+<tr>
+<td style="text-align:center">Arranca en minutos</td>
+<td style="text-align:center">Arranca en segundos</td>
+</tr>
+<tr>
+<td style="text-align:center">Las máquinas virtuales son de pocos GB</td>
+<td style="text-align:center">Los contenedores son livianos (KB / MB)</td>
+</tr>
+<tr>
+<td style="text-align:center">Las máquinas virtuales listas para usar son difíciles de encontrar</td>
+<td style="text-align:center">Los contenedores Docker prediseñados están fácilmente disponibles</td>
+</tr>
+<tr>
+<td style="text-align:center">Las máquinas virtuales pueden moverse a un nuevo host fácilmente</td>
+<td style="text-align:center">Los contenedores se destruyen y recrean en lugar de moverse</td>
+</tr>
+<tr>
+<td style="text-align:center">La creación de VM lleva relativamente más tiempo</td>
+<td style="text-align:center">Los contenedores se pueden crear en segundos</td>
+</tr>
+<tr>
+<td style="text-align:center">Más uso de recursos</td>
+<td style="text-align:center">Menor uso de recursos</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+
+        
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+
+  
+
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/es/posts/clusterpi/test/" class="btn btn-outline-info">
+          <span><i class="fas fa-chevron-circle-left"></i> </span>
+          <br />
+          <span>Test</span>
+        </a>
+      </div>
+      
+    
+    
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/es/posts/docker/instalacion/windows/" class="btn btn-outline-info">
+            <span> <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>Instalando Docker en Windows</span>
+          </a>
+        </div>
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+      <hr />
+      
+      
+          <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function () {
+    
+    
+    if (window.location.hostname == "localhost") return;
+
+    var dsq = document.createElement("script");
+    dsq.type = "text/javascript";
+    dsq.async = true;
+    var disqus_shortname = "ftapia-dev";
+    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(dsq);
+  })();
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+<a href="https://disqus.com/" class="dsq-brlink"
+  >comments powered by <span class="logo-disqus">Disqus</span></a
+>
+
+      
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3"></h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-es-un-contenedor">¿Qué es un contenedor?</a></li>
+    <li><a href="#por-qué-contenedores">¿Por qué contenedores?</a></li>
+    <li><a href="#docker">Docker</a></li>
+    <li><a href="#por-qué-no-utilizar-una-máquina-virtual">¿Por qué no utilizar una máquina virtual?</a>
+      <ul>
+        <li><a href="#qué-es-una-máquina-virtual">¿Qué es una máquina virtual?</a></li>
+        <li><a href="#docker-vs-vm">Docker vs VM</a></li>
+        <li><a href="#soporte-del-sistema-operativo">Soporte del sistema operativo</a></li>
+        <li><a href="#seguridad">Seguridad</a></li>
+        <li><a href="#portabilidad">Portabilidad</a></li>
+        <li><a href="#desempeño">Desempeño</a></li>
+        <li><a href="#resumen">Resumen</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navegación</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#acerca">Acerca de</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#skills">Habilidades</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#experiences">Experiencia</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#projects">Proyectos</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Posts Recientes</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#achievements">Galeria</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contáctame</h5>
+        <ul>
+          
+          <li><span>Direccion: </span> <span>Antigua Carretera a Pátzcuaro #8701 Colonia Ex-Hda. San José de la Huerta Morelia, Michoacán. México. C.P.580891</span></li>
+          
+          <li><span>Email1: </span> <span>f.tapia@irya.unam.mx</span></li>
+          
+          <li><span>Email2: </span> <span>ftapia@igeofisica.unam.mx</span></li>
+          
+          <li><span>Telefono: </span> <span>&#43;52 (443) 322 38 45 ext. 32845</span></li>
+          
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Puedes contactarme directamente llenando este cuestionario</p>
+        <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
+          <label for="email">Tu email</label>
+          <div>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+            <button type="submit">Suscríbete</button>
+          </div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      
+      <div class="col-md-10 text-center">© ftapia 2020 Copyright.</div>
+      
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>

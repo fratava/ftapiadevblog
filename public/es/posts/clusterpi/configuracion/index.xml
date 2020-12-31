@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuración on </title>
+    <link>https://ftapia.dev/es/posts/clusterpi/configuracion/</link>
+    <description>Recent content in Configuración on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Dec 2020 09:08:25 +0600</lastBuildDate><atom:link href="https://ftapia.dev/es/posts/clusterpi/configuracion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuración inicial</title>
+      <link>https://ftapia.dev/es/posts/clusterpi/configuracion/inicial/</link>
+      <pubDate>Thu, 31 Dec 2020 09:08:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/clusterpi/configuracion/inicial/</guid>
+      <description>Configuración inicial Para la priumer parte, necesitamos instalar el sistema operatico en los nodos y en el nodo maestro. Pra ello ingresaremos a https://www.raspberrypi.org/software/ y descargamos Raspberry Pi Imager para nuestro OS y así, poder copiar el sistema operativo en la tarjeta micro SD. Hay que seguir los pasos que se especifican en el siguiente video.
+   
+Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la volvemos a conectar.</description>
+    </item>
+    
+  </channel>
+</rss>

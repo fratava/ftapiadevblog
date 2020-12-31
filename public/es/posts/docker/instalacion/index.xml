@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Instalación on </title>
+    <link>https://ftapia.dev/es/posts/docker/instalacion/</link>
+    <description>Recent content in Instalación on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Dec 2020 08:08:25 +0600</lastBuildDate><atom:link href="https://ftapia.dev/es/posts/docker/instalacion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalando Docker en Windows</title>
+      <link>https://ftapia.dev/es/posts/docker/instalacion/windows/</link>
+      <pubDate>Thu, 31 Dec 2020 08:08:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/docker/instalacion/windows/</guid>
+      <description>Ahora que sabemos lo que es docker, vamos a instalarlo en nuestra computadora. Antes de instalarlo, es recomendable actualizar nuestro Windows a la versión más actual.
+Opcionalmente, podemos instalar algunos programas que nos ayudarán a tner una mejor experiencia de uso. Si ya tienes instalados estos programas, puedes dirigirte a la sección &amp;ndash;.
+Instalación de software esencial La terminal de Windows Para poder interactuar con docker, es necesario tener instalado una terminal.</description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en MacOS</title>
+      <link>https://ftapia.dev/es/posts/docker/instalacion/macos/</link>
+      <pubDate>Thu, 31 Dec 2020 08:07:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/docker/instalacion/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en Linux</title>
+      <link>https://ftapia.dev/es/posts/docker/instalacion/linux/</link>
+      <pubDate>Thu, 31 Dec 2020 08:06:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/docker/instalacion/linux/</guid>
+      <description>En el caso de linux, las cosas son más simples para trabajar con docker. En primer lugar, la mayoría de las distribuciones modernas (Ubuntu, CentOS, Fedora, etc.) incluyen por defecto un servidor gráfico, ya sea X.org o Wayland, por lo que para trabajar con docker y con proyectos open source, sólo es necesario verificar que contemos con git para el control de versiones e instalar docker.
+En el siguiente video, te muestro como verificar e instalar git y docker.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,14 +6,84 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Dec 2020 08:06:25 +0600</lastBuildDate><atom:link href="https://ftapia.dev/es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 10:16:25 +0600</lastBuildDate><atom:link href="https://ftapia.dev/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atmósferas estelares en estrellas de tipo solar a longitudes de onda milimétricas y submilimétricas</title>
       <link>https://ftapia.dev/es/posts/atmospheres/</link>
-      <pubDate>Fri, 11 Dec 2020 08:06:25 +0600</pubDate>
+      <pubDate>Thu, 31 Dec 2020 10:16:25 +0600</pubDate>
       
       <guid>https://ftapia.dev/es/posts/atmospheres/</guid>
       <description>La atmósfera de las estrellas de tipo solar está compuesta por la fotosfera, la cromosfera, la zona de transición y la corona. La cromosfera es la capa donde la temperatura va de 4000 K a 8000 K y se estudia en longitudes de onda ultravioleta, visible, infrarroja, milimétrica y (sub) milimétrica (Wedemeyer et al. 2016) 1. Los primeros modelos cromosféricos se obtuvieron gracias a las observaciones ultravioleta (Vernazza et al. 1981; Avrett &amp;amp; Loeser 2008) 2 3.</description>
+    </item>
+    
+    <item>
+      <title>Introducción</title>
+      <link>https://ftapia.dev/es/posts/clusterpi/introduccion/</link>
+      <pubDate>Thu, 31 Dec 2020 09:09:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/clusterpi/introduccion/</guid>
+      <description>Clúster de computacion con Raspberry Pi 4 El objetivo de este proyecto, es poder desarrollar un prototipo funcional de un cluster de computación con ordenadores de placa única u ordenadores de placa simple (SBC) de bajo coste mejor conocidos como Raspberry Pi. Detallaremos los pasos necesarios para este proyecto.  Responsables  MsC. Francisco Tapia Vázquez Dr. Victor De la Luz  Roadmap  Armado del cluster Configuración de los nodos Configuración del software Pruebas de estabilidad Optimización del cluster Lanzamiento de la versión 1.</description>
+    </item>
+    
+    <item>
+      <title>Configuración inicial</title>
+      <link>https://ftapia.dev/es/posts/clusterpi/configuracion/inicial/</link>
+      <pubDate>Thu, 31 Dec 2020 09:08:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/clusterpi/configuracion/inicial/</guid>
+      <description>Configuración inicial Para la priumer parte, necesitamos instalar el sistema operatico en los nodos y en el nodo maestro. Pra ello ingresaremos a https://www.raspberrypi.org/software/ y descargamos Raspberry Pi Imager para nuestro OS y así, poder copiar el sistema operativo en la tarjeta micro SD. Hay que seguir los pasos que se especifican en el siguiente video.
+   
+Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la volvemos a conectar.</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://ftapia.dev/es/posts/clusterpi/test/</link>
+      <pubDate>Thu, 31 Dec 2020 09:07:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/clusterpi/test/</guid>
+      <description>Probando nuestro clúster Aplicaciones en paralelo Llamada de procesos Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:
+su - alpha cd /beta/ git clone https://gitlab.com/fratava/cluster-pi.git cd cluster-pi Para la primera prueba, vamos a comprobar que hay intercomunicación entre los nodos del clúster. Para evitar estar listando los núcleos que vamos a utilizar, crearemos una archivo en dónde le vamos a indicar a MPI los nodos con los cuales va a estalecer la comunicación dinámicamente.</description>
+    </item>
+    
+    <item>
+      <title>¿Qué es Docker?</title>
+      <link>https://ftapia.dev/es/posts/docker/introduccion/</link>
+      <pubDate>Thu, 31 Dec 2020 08:09:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/docker/introduccion/</guid>
+      <description>Para entender lo que significa Docker, es necesario dar un breve repaso a los contenedores.
+¿Qué es un contenedor? Un contenedor o Container, es un sandbox donde es posible ejecutar servicios y procesos en un entorno protegido. Cada contenedor se ejecuta en un Host de Contenedor, que puede ser una máquina de Windows, MacOs o Linux. Los principales beneficios de los contenedores, si se comparan con las máquinas virtuales clásicas, son los siguientes:</description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en Windows</title>
+      <link>https://ftapia.dev/es/posts/docker/instalacion/windows/</link>
+      <pubDate>Thu, 31 Dec 2020 08:08:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/docker/instalacion/windows/</guid>
+      <description>Ahora que sabemos lo que es docker, vamos a instalarlo en nuestra computadora. Antes de instalarlo, es recomendable actualizar nuestro Windows a la versión más actual.
+Opcionalmente, podemos instalar algunos programas que nos ayudarán a tner una mejor experiencia de uso. Si ya tienes instalados estos programas, puedes dirigirte a la sección &amp;ndash;.
+Instalación de software esencial La terminal de Windows Para poder interactuar con docker, es necesario tener instalado una terminal.</description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en MacOS</title>
+      <link>https://ftapia.dev/es/posts/docker/instalacion/macos/</link>
+      <pubDate>Thu, 31 Dec 2020 08:07:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/docker/instalacion/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Instalando Docker en Linux</title>
+      <link>https://ftapia.dev/es/posts/docker/instalacion/linux/</link>
+      <pubDate>Thu, 31 Dec 2020 08:06:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/docker/instalacion/linux/</guid>
+      <description>En el caso de linux, las cosas son más simples para trabajar con docker. En primer lugar, la mayoría de las distribuciones modernas (Ubuntu, CentOS, Fedora, etc.) incluyen por defecto un servidor gráfico, ya sea X.org o Wayland, por lo que para trabajar con docker y con proyectos open source, sólo es necesario verificar que contemos con git para el control de versiones e instalar docker.
+En el siguiente video, te muestro como verificar e instalar git y docker.</description>
     </item>
     
   </channel>
