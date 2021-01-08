@@ -138,7 +138,7 @@ projects:
 
 - name: Conversatorio,IRyA
   logo: images/projects/irya-negro.png
-  role: Speaker
+  role: Expositor
   timeline: "Noviembre 2020"
   url: "https://www.facebook.com/iryaunam/videos/857480485059304"
   summary: ""
@@ -146,7 +146,7 @@ projects:
 
 - name: Observación Solar,IRyA
   logo: images/projects/irya-negro.png
-  role: Speaker
+  role: Expositor
   timeline: "Noviembre 2020"
   url: "https://www.facebook.com/iryaunam/videos/806964073487060"
   summary: ""
@@ -191,14 +191,14 @@ projects:
   tags: ["Docencia", "All"]
 
 - name: Onsala Space Observatory, Chalmers University of Technology
-  role: Gothenburg, Sweden
+  role: Gotemburgo, Suecia
   timeline: "2018"
   url: "https://www.oso.chalmers.se/"
   summary: "Bajo la supervisión del Dr. Wouter Vlemmings."
   tags: ["Estancias", "All"]
 
 - name: Centro de Rádio Astronomía e Astrofísica Mackenzie, Universidade Presbiteriana Mackenzie
-  role: São Paulo, Brazil
+  role: São Paulo, Brasil
   timeline: "2019"
   url: "https://www.mackenzie.br/centro-de-radio-astronomia-e-astrofisica-mackenzie/"
   summary: "Bajo la supervisión del Dr. Jean Pierre Raullin."

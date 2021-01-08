@@ -13,7 +13,7 @@ experiences:
   - company:
       name: Facultad de Ciencias Físico Matemáticas
       url: "http://www.fismat.umich.mx"
-      location: Morelia, Michoacán
+      location: Morelia, Michoacán, México
       # company overview
       overview: Universidad Michoacana de San Nicolás de Hidalgo.
     positions:
@@ -29,7 +29,7 @@ experiences:
   - company:
       name: Escuela Nacional de Estudios Superiores, Unidad Morelia
       url: "http://www.pctierra.unam.mx/"
-      location: Morelia, Michoacán
+      location: Morelia, Michoacán, México
       overview: Universidad Nacional Autónoma de México.
     positions:
     - designation: M. Sc. Earth Sciences
@@ -43,7 +43,7 @@ experiences:
   - company:
       name: Instituto de Radioastronomía y Astrofísica
       url: "https://www.irya.unam.mx/web/en/"
-      location:  Morelia, Michoacán
+      location:  Morelia, Michoacán, México
       overview: Universidad Nacional Autónoma de México.
     positions:
     - designation: Ph.D. Astronomy

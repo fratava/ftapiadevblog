@@ -18,7 +18,9 @@ company:
 resume: "files/curriculum_vitae_francisco_tapia.pdf"
 
 # a summary about you
-summary: 'I am currently doing my Ph.D. at the Institute of Radioastronomy and Astrophysics (IRyA) at the National Autonomous University of México (UNAM in Spanish).'
+summary: 'Actualmente me encuentro realizando mis estudios de doctorado en el Instituto de Radioastronomía y Astrofísica, en la Universidad Nacional Autónoma de México (UNAM). 
+Mis principales intereses, son el estudio de las atmósferas estelares en estrellas de secuencia principal utilizando observaciones de radio y 
+el desarrollo de soluciones para cómputo de alto rendimiento.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

@@ -18,7 +18,9 @@ company:
 resume: "files/curriculum_vitae_francisco_tapia_en.pdf"
 
 # a summary about you
-summary: "Je fais actuellement mon doctorat à l'Institut de radioastronomie et d'astrophysique (IRyA) de l'Université nationale autonome du Mexique (UNAM en espagnol)."
+summary: "Je fais actuellement mon doctorat à l'Institut de radioastronomie et d'astrophysique (IRyA) de l'Université nationale autonome du Mexique (UNAM en espagnol).
+Mes principaux intérêts sont l'étude des atmosphères stellaires dans les étoiles de la séquence principale à l'aide d'observations radio et
+ le développement de solutions pour le calcul haute performance."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

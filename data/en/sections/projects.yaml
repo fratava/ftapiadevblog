@@ -177,14 +177,14 @@ projects:
     tags: ["Teaching", "All"]
 
   - name: Herramientas de computo de alto rendimiento en el Servicio de Clima Espacial México
-    role: Expositor
+    role: Speaker
     timeline: "2016"
     url: "https://www.ugm.org.mx/raugm2016/#cursos_menu"
     summary: "Reunión Anual de la Unión Geofísica Mexicana, Puerto Vallarta, Jalisco."
     tags: ["Teaching", "All"]
   
   - name: Taller de Supercómputo de Clima Espacial
-    role: Expositor
+    role: Speaker
     timeline: "2017"
     url: "http://tasp.fcfm.uanl.mx/index.php/es/registro-es/taller-de-clima-espacial"
     summary: "3er. Taller de Astrofísica Planetaria y X Congreso Nacional de Astrobiología, UANL-Monterrey."

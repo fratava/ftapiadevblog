@@ -18,7 +18,8 @@ company:
 resume: "files/curriculum_vitae_francisco_tapia_en.pdf"
 
 # a summary about you
-summary: 'I am currently doing my Ph.D. at the Institute of Radioastronomy and Astrophysics (IRyA) at the National Autonomous University of México (UNAM in Spanish).'
+summary: 'I am currently doing my Ph.D. at the Institute of Radioastronomy and Astrophysics (IRyA) at the National Autonomous University of México (UNAM in Spanish).
+My main interests are the stellar atmospheres in main sequence stars and DevOps.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

@@ -13,7 +13,7 @@ section:
 skills:
   - name: Kubernetes
     icon: "images/skills/kubernetes.png"
-    summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes clusters for gitlab."
+    summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes clusters."
     url: "https://kubernetes.io/"
   
   - name: Docker

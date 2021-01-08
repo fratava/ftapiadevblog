@@ -18,14 +18,14 @@ experiences:
       # company overview
       overview: Universidad Michoacana de San Nicolás de Hidalgo.
     positions:
-    - designation: Licenciatura en Ciencias Físico Matemáticas
+    - designation: Baccalauréat en physiques
       start: 2012
       # don't provide end date if you are currently working there. It will be replaced by "Present"
       end: 2017
       responsibilities:
-      - Propagación de rayos cósmicos. [github](https://github.com/fratava/Cosmicrays)
-      - Atmósferas Estelares.
-      - Transferencia Radiativa.
+      - Propagation des rayons cosmiques. [github](https://github.com/fratava/Cosmicrays)
+      - Atmosphères stellaires.
+      - Transfert radiatif.
   
   - company:
       name: Escuela Nacional de Estudios Superiores, Unidad Morelia
@@ -33,13 +33,13 @@ experiences:
       location: Morelia, Michoacán
       overview: Universidad Nacional Autónoma de México.
     positions:
-    - designation: Maestría en Ciencias de la Tierra
+    - designation: Master des sciences de la terre
       start: 2017
       end: 2019
       responsibilities:
-      - Radioastronomía solar.
-      - Atmósferas Estelares.
-      - Transferencia Radiativa.
+      - Radioastronomie solaire.
+      - Atmosphères stellaires.
+      - Transfert radiatif.
   
   - company:
       name: Instituto de Radioastronomía y Astrofísica
@@ -47,9 +47,9 @@ experiences:
       location:  Morelia, Michoacán
       overview: Universidad Nacional Autónoma de México.
     positions:
-    - designation: Doctorado en Astronomía
+    - designation: Doctorat en astronomie
       start: 2019
       responsibilities:
-      - Radioastronomía.
-      - Atmósferas estelares.
-      - Estrellas de tipo solar.
+      - Radioastronomie.
+      - Atmosphères stellaires.
+      - Étoiles de type solaire.
