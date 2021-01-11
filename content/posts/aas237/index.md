@@ -29,7 +29,7 @@ MESAS is an ongoing observational campaign that seeks to obtain a broad spectral
 
 ##### 
 
-Spectrum obtained with Phoenix Models for Sirius A. (White et al. 2019) 
+Spectrum obtained with Phoenix Models for Sirius A. (White et al. 2019).
 
 ---
 
@@ -53,7 +53,7 @@ For the theoretical part, we have Kinich-Pakal that It’s a new methodology to 
 
 ##### 
 
-Top panel: Brightness temperature of KP models for Alpha Centauri A and the Sun. Bottom panel: Semiempirical models obtained for Alpha Centauri A. (Tapia-Vázquez & De la Luz, 2020)
+Top panel: Brightness temperature of KP models for Alpha Centauri A and the Sun. Bottom panel: Semiempirical models obtained for Alpha Centauri A. (Tapia-Vázquez & De la Luz, 2020).
 
 ---
 
@@ -63,7 +63,7 @@ Top panel: Brightness temperature of KP models for Alpha Centauri A and the Sun.
 
 ## MESAS & KINICH-PAKAL
 
-In a broad stellar context, both MESAS and KINICH-PAKAL works as a complement. MESAS provides an observational framework that constrains the stellar emission, and KinichPakal uses this information to model the atmosphere. As a result, we have a methodology to characterize the stellar emission from the radio to Infrared wavelengths. [^4]
+In a broad stellar context, both MESAS and KINICH-PAKAL works as a complement. MESAS provides an observational framework that constrains the stellar emission, and KinichPakal uses this information to model the atmosphere. As a result, we have a methodology to characterize the stellar emission from the radio to Infrared wavelengths[^4].
 
 {{< img src="/posts/aas237/images/gvir.png" height="400" width="500" align="center" >}}
 
@@ -77,7 +77,7 @@ In a broad stellar context, both MESAS and KINICH-PAKAL works as a complement. M
 
 ##### 
 
-Brightness temperature of KP models for gamma Vir A/B and gamma Lep (White et al. 2020)
+Brightness temperature of KP models for gamma Vir A/B and gamma Lep (White et al. 2020).
 
 ---
 
