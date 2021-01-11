@@ -1,7 +1,7 @@
 ---
 title: "MESAS Meets KINICH-PAKAL: Measure and Modeling Main Sequence Stellar Atmospheres"
 date: 2021-01-11T10:16:25+06:00
-hero: /posts/aas237/images/gvir.jpg
+hero: /posts/aas237/images/vir.jpg
 description: Stellar atmospheres
 menu:
   sidebar:
