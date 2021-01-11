@@ -11,79 +11,23 @@ menu:
 math: true
 ---
 
-{{< alert type="primary" >}} The dominant emission mechanisms at millimeter/submillimeter remain largely unknown for most spectral types other than Solar analogues. This is due in part to the lack of data to inform stellar atmosphere models. In this work, we present a new methodology to fit the observed and synthetic spectrum of main-sequence stars through semiempirical models. We use the Levenberg-Marquardt algorithm as a Nonlinear method, PakalMPI as the semiempirical model and the observations that are part of an ongoing observational campaign entitled Measuring the Emission of Stellar Atmospheres at Submillimeter/ Millimeter wavelengths. Our results show that we can use semiempirical models as an input model to reproduce and constrain the observed spectrum of main-sequence stars. In addition to a better understanding of stellar processes, these models are also essential for determining the stellar contribution to unresolved circumstellar disks at submillimeter/millimeter wavelengths. {{< /alert >}}
+The dominant emission mechanisms at millimeter/submillimeter remain largely unknown for most spectral types other than Solar analogues. This is due in part to the lack of data to inform stellar atmosphere models. In this work, we present a new methodology to fit the observed and synthetic spectrum of main-sequence stars through semiempirical models[^2]. We use the Levenberg-Marquardt algorithm as a Nonlinear method, PakalMPI[^1] as the semiempirical model and the observations that are part of an ongoing observational campaign entitled Measuring the Emission of Stellar Atmospheres at Submillimeter/ Millimeter wavelengths[^5]. Our results show that we can use semiempirical models as an input model to reproduce and constrain the observed spectrum of main-sequence stars[^4]. In addition to a better understanding of stellar processes, these models are also essential for determining the stellar contribution to unresolved circumstellar disks at submillimeter/millimeter wavelengths[^3].
 
-## MESAS: Measuring the Emission of Stellar Atmospheres at Submillimeter/millimeter Wavelengths
-
-MESAS is an ongoing observational campaign that seeks to obtain a broad spectral submillimeter–centimeter coverage of a range of spectral types to build a more complete catalog of stellar emission, because the spectrum of stars in this range, remains poorly constrained due to a lack of data for most spectral types and the Stars with no known circumstellar material provide valuable information about the physical conditions of the atmosphere. This information is useful to characterize the emission and use it as a template for several studies in many areas such as: stellar atmospheres, debris disks, and space weather. But, MESAS also can be applied in a stellar evolution context or even for long term stellar variability studies[^3] [^5].
-
-{{< img src="/posts/aas237/images/sirius.png" height="400" width="500" align="center"  title="A boat at the sea" >}}
-
-{{< vs -2 >}}
-
-{{< split 4 4 4 >}}
-
-##### 
-
----
-
-##### 
-
-Spectrum obtained with Phoenix Models for Sirius A. (White et al. 2019).
-
----
-
-##### 
-
-{{< /split >}}
-
-## KINICH-PAKAL (KP)
-
-For the theoretical part, we have Kinich-Pakal that It’s a new methodology to fit the observed and synthetic spectrum of solar-like stars from the centimeter to infrared wavelengths through semiempirical models. Kinich-Pakal uses the Levenberg-Marquardt algorithm to minimize the differences between synthetic and observed spectrum by running PakalMPI[^1] to hydrostatically equilibrate the atmosphere and to compute their synthetic spectrum. Kinich-Pakal is capable of finding the physical conditions such as pressure, density and temperature in function of the altitude[^2].
-
-{{< img src="/posts/aas237/images/KP_AAS_tp.png" height="700" width="500" align="center" >}}
-
-{{< vs -4 >}}
-
-{{< split 4 4 4 >}}
-
-##### 
-
----
-
-##### 
-
-Top panel: Brightness temperature of KP models for Alpha Centauri A and the Sun. Bottom panel: Semiempirical models obtained for Alpha Centauri A. (Tapia-Vázquez & De la Luz, 2020).
-
----
-
-##### 
-
-{{< /split >}}
-
-## MESAS & KINICH-PAKAL
-
-In a broad stellar context, both MESAS and KINICH-PAKAL works as a complement. MESAS provides an observational framework that constrains the stellar emission, and KinichPakal uses this information to model the atmosphere. As a result, we have a methodology to characterize the stellar emission from the radio to Infrared wavelengths[^4].
-
-{{< img src="/posts/aas237/images/gvir.png" height="400" width="500" align="center" >}}
-
-{{< vs -1 >}}
-
-{{< split 4 4 4 >}}
-
-##### 
-
----
-
-##### 
-
-Brightness temperature of KP models for gamma Vir A/B and gamma Lep (White et al. 2020).
-
----
-
-##### 
-
-{{< /split >}}
+{{< tweet 1348624995606540288 >}}
+{{< tweet 1348625944605581313 >}}
+{{< tweet 1348627696373428229 >}}
+{{< tweet 1348628931390402563 >}}
+{{< tweet 1348629614877413377 >}}
+{{< tweet 1348632119086620675 >}}
+{{< tweet 1348632812019179524 >}}
+{{< tweet 1348633231311183880 >}}
+{{< tweet 1348634566555275266 >}}
+{{< tweet 1348635841032294401 >}}
+{{< tweet 1348639447240290316 >}}
+{{< tweet 1348640710506008578 >}}
+{{< tweet 1348642544759013379 >}}
+{{< tweet 1348643740693442560 >}}
+{{< tweet 1348647799299186690 >}}
 
 ## References
 
