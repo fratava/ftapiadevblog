@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://ftapia.dev/</loc>
-    <lastmod>2020-12-31T10:16:25+06:00</lastmod>
+    <lastmod>2021-01-11T10:16:25+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -23,8 +23,13 @@
   </url>
   
   <url>
+    <loc>https://ftapia.dev/posts/aas237/</loc>
+    <lastmod>2021-01-11T10:16:25+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ftapia.dev/posts/</loc>
-    <lastmod>2020-12-31T10:16:25+06:00</lastmod>
+    <lastmod>2021-01-11T10:16:25+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
