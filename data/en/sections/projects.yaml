@@ -22,6 +22,8 @@ buttons:
   filter: "Teaching"
 - name: Internship
   filter: "Internship"
+- name: Meetings
+  filter: "Meetings"
 
 # your projects
 projects:
@@ -203,3 +205,11 @@ projects:
     url: "https://www.mackenzie.br/centro-de-radio-astronomia-e-astrofisica-mackenzie/"
     summary: "Under the supervision of Dr. Jean Pierre Raullin."
     tags: ["Internship", "All"]
+
+  - name: MESAS Meets KINICH-Pakal
+    logo: images/projects/aas.svg
+    role: Speaker
+    timeline: "January 2021"
+    url: "https://ftapia.dev/posts/aas237/"
+    summary: "AAS 237"
+    tags: ["Meetings", "All"]
