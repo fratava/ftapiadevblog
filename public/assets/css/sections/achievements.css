@@ -120,28 +120,46 @@
 
 /* Large screens such as TV */
 @media only screen and (min-width: 1824px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (max-width: 1400px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
 }
 
 @media (max-width: 1200px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
 }
 
 /* IPad Pro */
 @media (max-width: 1024px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
 }
 
 /*  Large devices (desktops, 992px and up) */
 
 @media (max-width: 992px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 
 @media only screen and (max-width: 768px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
   .achievements-section .container {
     max-width: 100%;
   }
@@ -161,12 +179,21 @@
 
 /* iPhoneX, iPhone 6,7,8 */
 @media only screen and (max-width: 375px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
 }
 
 /* Galaxy S5, Moto G4 */
 @media only screen and (max-width: 360px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
 }
 
 /* iPhone 5 or before */
 @media only screen and (max-width: 320px) {
+  #gallery .achievement-entry:hover {
+    transform: scale(1.05);
+  }
 }
