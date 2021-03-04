@@ -1,6 +1,6 @@
 ---
 title: "Configuración inicial"
-date: 2020-12-31T09:08:25+06:00
+date: 2020-12-31T09:06:25+06:00
 hero: /posts/clusterpi/images/terminal.jpg
 menu:
   sidebar:
@@ -21,26 +21,30 @@ Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la vol
 
 Linux (Ubuntu)
 
-    Abrimos una terminal ++ctrl+alt+t++ y tecleamos lo siguiente:
+* * *
 
-    ``` bash
-    cd /mnt/boot
-    touch ssh
-    exit
-    ```
+Abrimos una terminal ++ctrl+alt+t++ y tecleamos lo siguiente:
 
-    Después de eso, desmontamos la memoria SD de la computadora.
+``` bash
+cd /mnt/boot
+touch ssh
+exit
+```
+
+Después de eso, desmontamos la memoria SD de la computadora.
 
 MacOS
 
-    Abrimos una terminal y tecleamos lo siguiente:
+* * *
 
-    ``` bash
-    cd /Volumes/boot/
-    touch ssh
-    exit
-    ```
-    Después de eso, desmontamos la memoria SD de la computadora.
+Abrimos una terminal y tecleamos lo siguiente:
+
+``` bash
+cd /Volumes/boot/
+touch ssh
+exit
+```
+Después de eso, desmontamos la memoria SD de la computadora.
 
 ## Configurando el nodo maestro
 

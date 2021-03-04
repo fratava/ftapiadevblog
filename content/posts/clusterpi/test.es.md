@@ -1,13 +1,13 @@
 ---
 title: "Test"
-date: 2020-12-31T09:07:25+06:00
+date: 2020-12-31T09:04:25+06:00
 hero: /posts/clusterpi/images/terminal.jpg
 menu:
   sidebar:
     name: Test
     identifier: cluster-test-post
     parent: cluster-post
-    weight: 30
+    weight: 40
 ---
 
 #  Probando nuestro clúster
@@ -87,24 +87,20 @@ Llamada al proceso 11 de 16 en nodo2
 Recordemos que las llamadas son aleatorias.
 
 {{< alert type="info" >}} En algunas ocasiones, podrías no tener esta salida. En este caso deberás revisar que tu cable de red está bien conectado, tu raspberry está prendida o tu volumen está montado. Para verificar esto último podemos teclear
-
-    ```bash
-    cd /beta
-    ls
-    ```
-
-    Si el folder está vacío debemos teclear
-
-    ```bash
-    sudo mount master:/beta /beta
-    ```
-
+```bash
+cd /beta
+ls
+```
+Si el folder está vacío debemos teclear
+```bash
+sudo mount master:/beta /beta
+```
 y volvemos a ejecutar el código. {{< /alert >}}
 
 
-### Calculando $\pi$ en paralelo
+### Calculando Pi en paralelo
 
-Ahora calcularemos $\pi$ de forma paralela. Para esto, haremos una integración numérica. La idea detrás de este algoritmo la podemos encontrar en esta [página](http://cercs-ed.gatech.edu/node/14).
+Ahora calcularemos Pi de forma paralela. Para esto, haremos una integración numérica. La idea detrás de este algoritmo la podemos encontrar en esta [página](http://cercs-ed.gatech.edu/node/14).
 
 Procedemos entonces a ejecutar el código. Primero lo compilamos
 
@@ -133,7 +129,7 @@ Master node name: master
 Enter the number of intervals:
 ```
 
-El valor queda al criterio del usuario. A continuación, te mostramos a modo de ilustración, los resultados que se obtienen para 300000 rectángulos cuando se calcula $\pi$ con diferentes números de procesadores, los cuales los designaremos con "n=??" y `#!bash time` antes de la ejecución para medir el tiempo.
+El valor queda al criterio del usuario. A continuación, te mostramos a modo de ilustración, los resultados que se obtienen para 300000 rectángulos cuando se calcula Pi con diferentes números de procesadores, los cuales los designaremos con "n=??" y `#!bash time` antes de la ejecución para medir el tiempo.
 
 n=1
 ```shell

@@ -25,7 +25,7 @@ markup:
     ordered: false
   goldmark:
     renderer:
-    unsafe: true
+      unsafe: true
 
 # Enable global emoji support
 enableEmoji: true

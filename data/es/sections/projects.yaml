@@ -176,6 +176,22 @@ projects:
   summary: ""
   tags: ["Docencia", "All"]
 
+- name: Geoestadística
+  logo: images/projects/unam.png
+  role: Profesor de asignatura/ENES-Morelia
+  timeline: "2021"
+  url: "https://geoestadistica.ftapia.dev/"
+  summary: ""
+  tags: ["Docencia", "All"]
+
+- name: Cómmputo de alto desempeño
+  logo: images/projects/unam.png
+  role: Asistente de profesor/ENES-Morelia 
+  timeline: "2021"
+  url: "https://www.enesmorelia.unam.mx/"
+  summary: ""
+  tags: ["Docencia", "All"]
+
 - name: Herramientas de computo de alto rendimiento en el Servicio de Clima Espacial México
   role: Expositor
   timeline: "2016"

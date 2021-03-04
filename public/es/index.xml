@@ -19,7 +19,7 @@
     <item>
       <title>Introducción</title>
       <link>https://ftapia.dev/es/posts/clusterpi/introduccion/</link>
-      <pubDate>Thu, 31 Dec 2020 09:09:25 +0600</pubDate>
+      <pubDate>Thu, 31 Dec 2020 09:07:25 +0600</pubDate>
       
       <guid>https://ftapia.dev/es/posts/clusterpi/introduccion/</guid>
       <description>Clúster de computacion con Raspberry Pi 4 El objetivo de este proyecto, es poder desarrollar un prototipo funcional de un cluster de computación con ordenadores de placa única u ordenadores de placa simple (SBC) de bajo coste mejor conocidos como Raspberry Pi. Detallaremos los pasos necesarios para este proyecto.  Responsables  MsC. Francisco Tapia Vázquez Dr. Victor De la Luz  Roadmap  Armado del cluster Configuración de los nodos Configuración del software Pruebas de estabilidad Optimización del cluster Lanzamiento de la versión 1.</description>
@@ -28,7 +28,7 @@
     <item>
       <title>Configuración inicial</title>
       <link>https://ftapia.dev/es/posts/clusterpi/configuracion/inicial/</link>
-      <pubDate>Thu, 31 Dec 2020 09:08:25 +0600</pubDate>
+      <pubDate>Thu, 31 Dec 2020 09:06:25 +0600</pubDate>
       
       <guid>https://ftapia.dev/es/posts/clusterpi/configuracion/inicial/</guid>
       <description>Configuración inicial Para la priumer parte, necesitamos instalar el sistema operatico en los nodos y en el nodo maestro. Pra ello ingresaremos a https://www.raspberrypi.org/software/ y descargamos Raspberry Pi Imager para nuestro OS y así, poder copiar el sistema operativo en la tarjeta micro SD. Hay que seguir los pasos que se especifican en el siguiente video.
@@ -37,9 +37,20 @@ Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la vol
     </item>
     
     <item>
+      <title>Configuranción de los nodos</title>
+      <link>https://ftapia.dev/es/posts/clusterpi/configuracion/nodos/</link>
+      <pubDate>Thu, 31 Dec 2020 09:05:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/clusterpi/configuracion/nodos/</guid>
+      <description>Creando un usuario común Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.
+Agregar un nuevo usuario Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro.
+cd /home sudo useradd -m -u 1960 alpha ls -la /home El parámetro -m especifica el directorio /home, -u es el argumento para un nueevo usuario, 1960 es el ID del usuario y alpha es el nombre del nuevo usuario.</description>
+    </item>
+    
+    <item>
       <title>Test</title>
       <link>https://ftapia.dev/es/posts/clusterpi/test/</link>
-      <pubDate>Thu, 31 Dec 2020 09:07:25 +0600</pubDate>
+      <pubDate>Thu, 31 Dec 2020 09:04:25 +0600</pubDate>
       
       <guid>https://ftapia.dev/es/posts/clusterpi/test/</guid>
       <description>Probando nuestro clúster Aplicaciones en paralelo Llamada de procesos Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:

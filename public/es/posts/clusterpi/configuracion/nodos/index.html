@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Configuranción de los nodos</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/pakal-blanco.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+<meta name="description" content="Configuranción de los nodos" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-163502824-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/es">
+      <img src="/images/pakal-negro.png"></a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/pakal-negro.png" class="d-none" id="main-logo">
+  <img src="/images/pakal-blanco.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/es/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/">Docker</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/introduccion/">¿Qué es Docker?</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/es/posts/docker/instalacion/">Instalación</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/linux/">Linux</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/macos/">MacOS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/docker/instalacion/windows/">Windows</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/clusterpi/">Raspberry Pi 4 Clúster</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/introduccion/">Introducción</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/es/posts/clusterpi/configuracion/">Configuración</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/es/posts/clusterpi/configuracion/nodos/">Configuración de los nodos</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/test/">Test</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/atmospheres/">Atmósferas estelares</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://ftapia.dev/posts/clusterpi/images/terminal.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/profilepic.png'/>
+          <h5 class="author-name">Francisco Tapia Vázquez</h5>
+          <p>December 31, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>Configuranción de los nodos</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          <h1 id="creando-un-usuario-común">Creando un usuario común</h1>
+<p>Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.</p>
+<h2 id="agregar-un-nuevo-usuario">Agregar un nuevo usuario</h2>
+<p>Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /home
+sudo useradd -m -u <span style="color:#ae81ff">1960</span> alpha
+ls -la /home
+</code></pre></div><p>El parámetro <code>-m</code> especifica el directorio <code>/home</code>, <code>-u</code> es el argumento para un nueevo usuario, 1960 es el ID del usuario y <code>alpha</code> es el nombre del nuevo usuario. Podemos modificar el nombre por otro. Al teclear ls -la /home aparecerá el nuevo usuario creado junto con <code>pi</code> y <code>root</code>.
+El próximo paso, es crear un contraseña para este usuario. Teclamos entonces</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo passwd alpha
+</code></pre></div><p>e introduciomos la contraseña.
+Para verfificar que sea ha creado correctamente el usuario y que todo está en orden, vamos a iniciar sesión con el nuevo usuario coon el siguiente comando</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su - alpha
+</code></pre></div><p>introducimos la contraseña y estamos dentro del usuario.  Si tecleamos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">exit
+</code></pre></div><p>regresamos al usuario <code>pi</code>. Ahora nos conectaremos mediante <em>ssh</em> al nodox y repetimos los pasos anteriores. Podemos acceder mediante</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh nodox
+</code></pre></div><p>y ponemos la contraseña del nodo.</p>
+<div class="alert alert-info">
+    <strong>Es bueno utilizar la misma contraseña para todos los nodos.</strong>
+</div>
+
+<h2 id="generar-el-id-key">Generar el ID key</h2>
+<p>Ahora que ya configuramos el usuario en común, el nodox va a correr todos los programas MPI. Vamos a generar un llave especial que permitirá conectarnos mediante <em>ssh</em> sin contraseña de un nodo a otro, o del nodo maestro a un nodo las veces que lo necesitemos. Para hacer esto nos situamos en el nodo maestro y después, nos conectamos al usuario <em>alpha</em> mediante</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su - alpha
+</code></pre></div><p>y una vez adentro, teclamos los siguiente</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa
+</code></pre></div><p>en donde <code>-t</code> es el argumento y <code>rsa</code> es el tipo de encriptación. Para generar la clave necesitamos ingresar</p>
+<ul>
+<li>El nombre del archivo donde vamos a guardar la clave</li>
+<li>Ingresar la <em>passphrase</em> (escogeremos la frase de nuestra elección)</li>
+<li>Reingresamos la <em>passphrase</em></li>
+</ul>
+<p>y tendremos que ver una imagen como la siguiente</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">+--<span style="color:#f92672">[</span> RSA 2048<span style="color:#f92672">]</span>----+
+|       o<span style="color:#f92672">=</span>.       |
+|    o  o++E      |
+|   + . Ooo.      |
+|    + O B..      |
+|     <span style="color:#f92672">=</span> *S.       |
+|      o          |
+|                 |
+|                 |
+|                 |
++-----------------+
+</code></pre></div><h2 id="copiar-la-clave-a-los-demás-nodos">Copiar la clave a los demás nodos</h2>
+<p>Ya que generamos la clave, la vamos a transferir al nodox con el siguiente comando</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id alpha@nodox; alpha
+</code></pre></div><p>y teclamos el <em>passphrase</em>. Para verificar que se tranfirió bien la clave, nos conectaremos al nodo de la siguiente manera</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh nodox
+</code></pre></div><p>e introducimos el <em>passphrase</em> nuevamente e ingresaremos al nodox. Ahora regresamos al nodo maestro mediante <code>exit</code> y listamos los archivos en el usuario alpha utilizando <code>ls -la</code>. Indentificamos la carpeta <code>.ssh</code> y vemos lo que está adentro con <code>ls -la .ssh</code>. Ahí vamos a ver estos tres archivos</p>
+<ul>
+<li>id_rsa</li>
+<li>id_rsa.pub</li>
+<li>known_hosts</li>
+</ul>
+<p>Si nos intentamos conectar nuevamente al nodox, nos va a solicitar la <em>passphrase</em>. Esto no es lo que estamos buscando, por lo que aún debemos realizar algunos cambios en nuestro nodo maestro. Regresamos al nodo maestro mediante <code>exit</code> o cerrando la ventana de la terminal y conectandonos al modo maestro. Nos percatamos que nos encontramos en el usurio <code>alpha</code>, si no es así ingresamos mediante <code>su - alpha</code>. Vamos a editar el archivo llamado <code>.bashrc</code> dentro de nuestro directorio de inicio. Abrimos el archivo con nuestro editor favorito, puede ser emacs, vim, nano o pico. Nano viene instalado por defecto, entonces lo utilizaremos en esta guía. Entonces teclamos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nano .bash
+</code></pre></div><p>nos vamos hasta el final del archivo y agregamos el siguiente texto</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Logic for keychain</span>
+/usr/bin/keychain $HOME/.ssh/id_rsa
+source $HOME/.keychain/$HOSTNAME-sh
+</code></pre></div><p>y tecleamos <code>ctrl + o</code> para guardar y <code>ctrl + x</code> para salir. Entonces recompilamos el archivo <code>.bashrc</code> mediante</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source .bashrc
+</code></pre></div><p>volvemos a ingresar el <em>passphrase</em>. Ahora nos volvemos a conectar al nodox con</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh nodox
+</code></pre></div><p>y ¡listo!, nos hemos conectado al nodox. Vamos a repetir este proceso para cada nodo del clúster.</p>
+<h2 id="creando-una-carpeta-compartida">Creando una carpeta compartida</h2>
+<p>Para que los datos puedan ser accesibles para todos los nodos, es necesario crear un repositorio. Vamos a montarlo en el nodo maestro de la siguiente manera. Primero, vamos a crear la carpeta que va a ser compartida.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mkdir /beta
+</code></pre></div><p>en este caso la montanmos en el directorio raíz <code>/</code> y la llamaremos beta. Le cederemos la propiedad al usuario <code>alpha</code>, ya que es el usuario común. Entonces tecleamos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo chown alpha:alpha /beta/
+</code></pre></div><p>el directorio <code>/beta</code> ahora puede ser accedido por el usuario y grupo <code>alpha</code>. El siguiente paso es modificar el servicio <code>rpcbind</code> para poder exportar el directorio a los demás nodos. tecleamos</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rpcbind start
+sudo update-rc.d rpcbind enable
+</code></pre></div><p>la segunda línea es para especificar que el servicio se ejecute cada vez que se inicia el sistema. Tenemos ahora que especificar que directorio en el nodo maestro va a estar disponible para ser montado por los demás nodos. Para ellos vamos a modificar el archivo <code>exports</code> abriendolo con <code>sudo emacs /etc/exports</code> ya añadiendo al final del archivo la siguiente línea</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#beta</span>
+/beta 192.168.0.0/24<span style="color:#f92672">(</span>rw,sync<span style="color:#f92672">)</span>
+</code></pre></div><p>Salvamos con <code>ctrl+x+ctrl+s</code> y salimos con <code>ctrl+x+ctrl+c</code>.</p>
+<p>En este caso <code>/beta</code>es la carpeta en el nodo maestro que vamos a exportar. <code>192.168.0.0/24</code> significa que las direcciones IP pueden en un rango entre <code>192.168.0.0</code> y <code>192.168.0.255</code> pueden montar el directorio <code>/beta</code>. <code>rw</code> significa que se puede leer y escribir en ella. Para que tenga efecto el cambio que realizamos, necesitamos reiniciar el servicio <code>nfs-kernel-server</code>con <code>sudo service nfs-kernel-server restart</code>. Se puede automatizar este proceso cada vez que inicie el sistema. Para ello necesitamos mofdificar el archivo <code>sudo emacs /etc/rc.local</code> y poner en la penúltima línea, antes de <code>exit 0</code> lo sigueinte</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo service nfs-kernel-server restart
+</code></pre></div><p>guardamos y cerramos el archivo. Vamos a hacer un test. Nos conectamos al nodox con <code>ssh nodox</code> y una vez dentro, teclamos los siguiente</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mkdir /beta
+sudo chown alpha:alpha /beta
+sudo mount master:/beta /beta
+</code></pre></div><p>hemos creado un directorio llamado <code>\beta</code> que ahora le pertenece al usuario y al grupo <code>alpha</code>. Después, le indicamos que monte el directorio <code>/beta</code> del <code>master</code> en <code>/beta</code>. Para probar que todo ha sido ejecutado de manera correcta, vamos a cambiar al usuario <code>alpha</code> con <code>su - alpha</code>. Para ver los directorio que se encuentran en la carpeta raíz hacemos <code>la -la /</code> y debe aparecer <code>/beta</code>, nos cambiamos a ese directorio con <code>cd /beta</code> y creamos un archivo <code>echo &quot;Hola mundo&quot; -&gt; hola.txt</code>. Regresamos al usuario <code>pi</code>con <code>exit</code> y ahora nos conectamos de vuelta al nodo maestro <code>ssh master</code>. Una vez en el nodo maestro podemos ver si el archivo se ha guardado en el directorio compartido con <code>ls -la /beta</code>. Ahí debe aparecer el archivo <code>hola.txt</code>y si hacemos <code>cat /beta/hola.txt</code> nos debe aparecer la frase <code>Hola mundo</code>.</p>
+<div class="alert alert-success">
+    <strong>Hemos configuirado nuestro clúster de manera correcta. En la siguiente sección, vamos a hacer algunas pruebas.</strong>
+</div>
+
+<!--- <iframe src="https://drive.google.com/file/d/107aUt0Pp2Ud-JUl-VkmFnw0Lq4iv0ALH/preview" width="640" height="480" aling="center"></iframe>  --->
+
+        </div>
+
+        
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/es/posts/clusterpi/configuracion/inicial/" class="btn btn-outline-info">
+          <span><i class="fas fa-chevron-circle-left"></i> </span>
+          <br />
+          <span>Configuración inicial</span>
+        </a>
+      </div>
+      
+    
+    
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/es/posts/clusterpi/test/" class="btn btn-outline-info">
+            <span> <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>Test</span>
+          </a>
+        </div>
+      
+    
+  
+
+  
+
+  
+
+  
+
+</div>
+
+      <hr />
+      
+      
+          <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function () {
+    
+    
+    if (window.location.hostname == "localhost") return;
+
+    var dsq = document.createElement("script");
+    dsq.type = "text/javascript";
+    dsq.async = true;
+    var disqus_shortname = "ftapia-dev";
+    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(dsq);
+  })();
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+<a href="https://disqus.com/" class="dsq-brlink"
+  >comments powered by <span class="logo-disqus">Disqus</span></a
+>
+
+      
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3"></h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#agregar-un-nuevo-usuario">Agregar un nuevo usuario</a></li>
+    <li><a href="#generar-el-id-key">Generar el ID key</a></li>
+    <li><a href="#copiar-la-clave-a-los-demás-nodos">Copiar la clave a los demás nodos</a></li>
+    <li><a href="#creando-una-carpeta-compartida">Creando una carpeta compartida</a></li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navegación</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#acerca">Acerca de</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#skills">Habilidades</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#experiences">Experiencia</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#projects">Proyectos</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Posts Recientes</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#achievements">Galeria</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contáctame</h5>
+        <ul>
+          
+          <li><span>Direccion: </span> <span>Antigua Carretera a Pátzcuaro #8701 Colonia Ex-Hda. San José de la Huerta Morelia, Michoacán. México. C.P.580891</span></li>
+          
+          <li><span>Email1: </span> <span>f.tapia@irya.unam.mx</span></li>
+          
+          <li><span>Email2: </span> <span>ftapia@igeofisica.unam.mx</span></li>
+          
+          <li><span>Telefono: </span> <span>&#43;52 (443) 322 38 45 ext. 32845</span></li>
+          
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Puedes contactarme directamente llenando este cuestionario</p>
+        <form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <div hidden aria-hidden="true">
+            <label>
+              Don’t fill this out if you're human: 
+              <input name="bot-field" />
+            </label>
+          </div>
+          <label for="email">Tu email</label>
+          <div>
+            <input type="email" name="email" placeholder="Email"  id="email" required />
+            <button type="submit">Suscríbete</button>
+          </div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      
+      <div class="col-md-10 text-center">© ftapia 2021 Copyright.</div>
+      
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>

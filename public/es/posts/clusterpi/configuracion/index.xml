@@ -6,16 +6,27 @@
     <description>Recent content in Configuración on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Dec 2020 09:08:25 +0600</lastBuildDate><atom:link href="https://ftapia.dev/es/posts/clusterpi/configuracion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 09:06:25 +0600</lastBuildDate><atom:link href="https://ftapia.dev/es/posts/clusterpi/configuracion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuración inicial</title>
       <link>https://ftapia.dev/es/posts/clusterpi/configuracion/inicial/</link>
-      <pubDate>Thu, 31 Dec 2020 09:08:25 +0600</pubDate>
+      <pubDate>Thu, 31 Dec 2020 09:06:25 +0600</pubDate>
       
       <guid>https://ftapia.dev/es/posts/clusterpi/configuracion/inicial/</guid>
       <description>Configuración inicial Para la priumer parte, necesitamos instalar el sistema operatico en los nodos y en el nodo maestro. Pra ello ingresaremos a https://www.raspberrypi.org/software/ y descargamos Raspberry Pi Imager para nuestro OS y así, poder copiar el sistema operativo en la tarjeta micro SD. Hay que seguir los pasos que se especifican en el siguiente video.
    
 Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la volvemos a conectar.</description>
+    </item>
+    
+    <item>
+      <title>Configuranción de los nodos</title>
+      <link>https://ftapia.dev/es/posts/clusterpi/configuracion/nodos/</link>
+      <pubDate>Thu, 31 Dec 2020 09:05:25 +0600</pubDate>
+      
+      <guid>https://ftapia.dev/es/posts/clusterpi/configuracion/nodos/</guid>
+      <description>Creando un usuario común Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.
+Agregar un nuevo usuario Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro.
+cd /home sudo useradd -m -u 1960 alpha ls -la /home El parámetro -m especifica el directorio /home, -u es el argumento para un nueevo usuario, 1960 es el ID del usuario y alpha es el nombre del nuevo usuario.</description>
     </item>
     
   </channel>

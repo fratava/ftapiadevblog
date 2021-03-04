@@ -214,6 +214,15 @@ if (!doNotTrack) {
     <li><a class="active" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/nodos/">Configuración de los nodos</a></li>
+  
+
 
       </ul>
     </li>
@@ -283,26 +292,19 @@ if (!doNotTrack) {
 <div style="margin-top: rem;"></div></p>
 <p>Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la volvemos a conectar. Debemos seguir las siguientes instrucciones.</p>
 <p>Linux (Ubuntu)</p>
-<pre><code>Abrimos una terminal ++ctrl+alt+t++ y tecleamos lo siguiente:
-
-``` bash
-cd /mnt/boot
+<hr>
+<p>Abrimos una terminal ++ctrl+alt+t++ y tecleamos lo siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /mnt/boot
 touch ssh
 exit
-```
-
-Después de eso, desmontamos la memoria SD de la computadora.
-</code></pre>
+</code></pre></div><p>Después de eso, desmontamos la memoria SD de la computadora.</p>
 <p>MacOS</p>
-<pre><code>Abrimos una terminal y tecleamos lo siguiente:
-
-``` bash
-cd /Volumes/boot/
+<hr>
+<p>Abrimos una terminal y tecleamos lo siguiente:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /Volumes/boot/
 touch ssh
 exit
-```
-Después de eso, desmontamos la memoria SD de la computadora.
-</code></pre>
+</code></pre></div><p>Después de eso, desmontamos la memoria SD de la computadora.</p>
 <h2 id="configurando-el-nodo-maestro">Configurando el nodo maestro</h2>
 <p>Una vez que completamos el paso anterior, colacamos la memoria SD en el el slot de la placa, conectamos el eliminador de corriente y el cable ethernet tanto en la placa como en el switch.
 Esperamos un par de minutos mientras se inicia el sistema operativo y abrimos la terminal de nuestro sistema operativo y tecleamos:</p>
@@ -449,6 +451,8 @@ fab cmd:<span style="color:#e6db74">&#34;apt-get install -y git&#34;</span>
   
 
   
+
+  
     
       
       <div class="col-md-6 previous-article">
@@ -469,10 +473,10 @@ fab cmd:<span style="color:#e6db74">&#34;apt-get install -y git&#34;</span>
           
         
         <div class="col-md-6 next-article">
-          <a href="/es/posts/clusterpi/test/" class="btn btn-outline-info">
+          <a href="/es/posts/clusterpi/configuracion/nodos/" class="btn btn-outline-info">
             <span> <i class="fas fa-chevron-circle-right"></i></span>
             <br />
-            <span>Test</span>
+            <span>Configuranción de los nodos</span>
           </a>
         </div>
       

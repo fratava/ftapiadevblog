@@ -6,11 +6,11 @@
     <description>Recent content in Clúster Rasp on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Dec 2020 09:09:25 +0600</lastBuildDate><atom:link href="https://ftapia.dev/es/posts/clusterpi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 09:07:25 +0600</lastBuildDate><atom:link href="https://ftapia.dev/es/posts/clusterpi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducción</title>
       <link>https://ftapia.dev/es/posts/clusterpi/introduccion/</link>
-      <pubDate>Thu, 31 Dec 2020 09:09:25 +0600</pubDate>
+      <pubDate>Thu, 31 Dec 2020 09:07:25 +0600</pubDate>
       
       <guid>https://ftapia.dev/es/posts/clusterpi/introduccion/</guid>
       <description>Clúster de computacion con Raspberry Pi 4 El objetivo de este proyecto, es poder desarrollar un prototipo funcional de un cluster de computación con ordenadores de placa única u ordenadores de placa simple (SBC) de bajo coste mejor conocidos como Raspberry Pi. Detallaremos los pasos necesarios para este proyecto.  Responsables  MsC. Francisco Tapia Vázquez Dr. Victor De la Luz  Roadmap  Armado del cluster Configuración de los nodos Configuración del software Pruebas de estabilidad Optimización del cluster Lanzamiento de la versión 1.</description>
@@ -19,7 +19,7 @@
     <item>
       <title>Test</title>
       <link>https://ftapia.dev/es/posts/clusterpi/test/</link>
-      <pubDate>Thu, 31 Dec 2020 09:07:25 +0600</pubDate>
+      <pubDate>Thu, 31 Dec 2020 09:04:25 +0600</pubDate>
       
       <guid>https://ftapia.dev/es/posts/clusterpi/test/</guid>
       <description>Probando nuestro clúster Aplicaciones en paralelo Llamada de procesos Para esta parte, vamos a ejecutar una serie de códigos en parelelo para comprobar la comunicación entre los nodos. Para ello vamos a clonar el repositorio de pruebas siguiendo estos pasos:

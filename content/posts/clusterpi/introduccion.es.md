@@ -1,6 +1,6 @@
 ---
 title: "Introducción"
-date: 2020-12-31T09:09:25+06:00
+date: 2020-12-31T09:07:25+06:00
 hero: /posts/clusterpi/images/pi4.png
 menu:
   sidebar:

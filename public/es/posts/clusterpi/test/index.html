@@ -208,6 +208,15 @@ if (!doNotTrack) {
     <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/nodos/">Configuración de los nodos</a></li>
+  
+
 
       </ul>
     </li>
@@ -318,23 +327,16 @@ Llamada al proceso <span style="color:#ae81ff">11</span> de <span style="color:#
 </code></pre></div><p>Recordemos que las llamadas son aleatorias.</p>
 <div class="alert alert-info">
     <strong><p>En algunas ocasiones, podrías no tener esta salida. En este caso deberás revisar que tu cable de red está bien conectado, tu raspberry está prendida o tu volumen está montado. Para verificar esto último podemos teclear</p>
-<pre><code>```bash
-cd /beta
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /beta
 ls
-```
-
-Si el folder está vacío debemos teclear
-
-```bash
-sudo mount master:/beta /beta
-```
-</code></pre>
-<p>y volvemos a ejecutar el código.</p>
+</code></pre></div><p>Si el folder está vacío debemos teclear</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mount master:/beta /beta
+</code></pre></div><p>y volvemos a ejecutar el código.</p>
 </strong>
 </div>
 
-<h3 id="calculando-pi-en-paralelo">Calculando $\pi$ en paralelo</h3>
-<p>Ahora calcularemos $\pi$ de forma paralela. Para esto, haremos una integración numérica. La idea detrás de este algoritmo la podemos encontrar en esta <a href="http://cercs-ed.gatech.edu/node/14">página</a>.</p>
+<h3 id="calculando-pi-en-paralelo">Calculando Pi en paralelo</h3>
+<p>Ahora calcularemos Pi de forma paralela. Para esto, haremos una integración numérica. La idea detrás de este algoritmo la podemos encontrar en esta <a href="http://cercs-ed.gatech.edu/node/14">página</a>.</p>
 <p>Procedemos entonces a ejecutar el código. Primero lo compilamos</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mpicc pi_mpi.c -o pi_mpi
 </code></pre></div><p>y lo ejecutamos</p>
@@ -347,7 +349,7 @@ sudo mount master:/beta /beta
 Master node name: master 
 
 Enter the number of intervals:
-</code></pre></div><p>El valor queda al criterio del usuario. A continuación, te mostramos a modo de ilustración, los resultados que se obtienen para 300000 rectángulos cuando se calcula $\pi$ con diferentes números de procesadores, los cuales los designaremos con &ldquo;n=??&rdquo; y <code>#!bash time</code> antes de la ejecución para medir el tiempo.</p>
+</code></pre></div><p>El valor queda al criterio del usuario. A continuación, te mostramos a modo de ilustración, los resultados que se obtienen para 300000 rectángulos cuando se calcula Pi con diferentes números de procesadores, los cuales los designaremos con &ldquo;n=??&rdquo; y <code>#!bash time</code> antes de la ejecución para medir el tiempo.</p>
 <p>n=1</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    alpha@master:/beta/cluster-pi $ time mpiexec -machinefile machinefile -n <span style="color:#ae81ff">1</span> ./pi_mpi
 
@@ -476,10 +478,10 @@ Enter the number of intervals:
     
       
       <div class="col-md-6 previous-article">
-        <a href="/es/posts/clusterpi/configuracion/inicial/" class="btn btn-outline-info">
+        <a href="/es/posts/clusterpi/configuracion/nodos/" class="btn btn-outline-info">
           <span><i class="fas fa-chevron-circle-left"></i> </span>
           <br />
-          <span>Configuración inicial</span>
+          <span>Configuranción de los nodos</span>
         </a>
       </div>
       
@@ -501,6 +503,8 @@ Enter the number of intervals:
         </div>
       
     
+  
+
   
 
   
@@ -563,7 +567,7 @@ Enter the number of intervals:
     <li><a href="#aplicaciones-en-paralelo">Aplicaciones en paralelo</a>
       <ul>
         <li><a href="#llamada-de-procesos">Llamada de procesos</a></li>
-        <li><a href="#calculando-pi-en-paralelo">Calculando $\pi$ en paralelo</a></li>
+        <li><a href="#calculando-pi-en-paralelo">Calculando Pi en paralelo</a></li>
       </ul>
     </li>
   </ul>

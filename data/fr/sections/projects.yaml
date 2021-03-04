@@ -178,6 +178,22 @@ projects:
     summary: ""
     tags: ["Enseignement", "Tout"]
 
+  - name: Geostatistics
+    logo: images/projects/unam.png
+    role: Professeur agrégé/ENES-Morelia
+    timeline: "2021"
+    url: "https://www.enesmorelia.unam.mx/"
+    summary: ""
+    tags: ["Enseignement", "Tout"]
+
+  - name: High Performancee Computing
+    logo: images/projects/unam.png
+    role: Maître assistant/ENES-Morelia 
+    timeline: "2021"
+    url: "https://www.enesmorelia.unam.mx/"
+    summary: ""
+    tags: ["Enseignement", "Tout"]
+
   - name: Herramientas de computo de alto rendimiento en el Servicio de Clima Espacial México
     role: Expositeur
     timeline: "2016"

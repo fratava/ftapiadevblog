@@ -208,6 +208,15 @@ if (!doNotTrack) {
     <li><a class="" href="/es/posts/clusterpi/configuracion/inicial/">Configuración inicial</a></li>
   
 
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/es/posts/clusterpi/configuracion/nodos/">Configuración de los nodos</a></li>
+  
+
 
       </ul>
     </li>
@@ -291,6 +300,31 @@ Después de instalar Raspian en la memoria SD, la expulsamos del equipo y la vol
         <span class="float-left">December 31, 2020</span>
         <a
         href="/es/posts/clusterpi/configuracion/inicial/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Ver más</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        <div class="post-card">
+  <a href="/es/posts/clusterpi/configuracion/nodos/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/clusterpi/images/terminal.jpg'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Configuranción de los nodos</h5>
+        <p class="card-text post-summary">Creando un usuario común Para lograr que todos los nodos del clúster se puedan comunicar entre ellos, es necesario que cuenten con un usuario único.
+Agregar un nuevo usuario Para agregar un nuevo usuario, debemos teclear los siguientes comandos en el nodo maestro.
+cd /home sudo useradd -m -u 1960 alpha ls -la /home El parámetro -m especifica el directorio /home, -u es el argumento para un nueevo usuario, 1960 es el ID del usuario y alpha es el nombre del nuevo usuario.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">December 31, 2020</span>
+        <a
+        href="/es/posts/clusterpi/configuracion/nodos/"
         class="float-right btn btn-outline-info btn-sm"
         >Ver más</a
         >
